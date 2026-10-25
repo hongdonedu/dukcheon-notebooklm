@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>덕천초 노트북LM 연수 아카이브</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700;900&display=swap">
+<style>
+/* Layout: studio shell — dark violet sidebar with numbered steps, bright content column with key-art hero and bubbly cards. */
+:root{
+  --side:#2a1f5e; --side-2:#3a2d7a; --bg:#f3f0ff; --paper:#ffffff; --ink:#2a2352; --ink-2:#6b648f; --line:#e4defa;
+  --violet:#6d4df2; --violet-soft:#ece7ff; --sun:#ffc531; --sun-deep:#ff9f1c; --mint:#38d6b4; --mint-soft:#dff8f1; --pink:#ff7aa8;
+  --code:#f7f5ff; --shadow:0 10px 30px rgba(74,55,170,.14); --r:22px;
+  --display:"Jua","Noto Sans KR",sans-serif; --body:"Noto Sans KR",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --side:#1a1340; --side-2:#241a5a; --bg:#15112b; --paper:#1f1a3d; --ink:#efecff; --ink-2:#b4acd9; --line:#352c66;
+  --violet:#9d86ff; --violet-soft:#2b2360; --sun:#ffc531; --sun-deep:#ff9f1c; --mint:#38d6b4; --mint-soft:#163b34; --pink:#ff7aa8;
+  --code:#171231; --shadow:0 10px 30px rgba(0,0,0,.4); color-scheme:dark } }
+:root[data-theme="dark"]{
+  --side:#1a1340; --side-2:#241a5a; --bg:#15112b; --paper:#1f1a3d; --ink:#efecff; --ink-2:#b4acd9; --line:#352c66;
+  --violet:#9d86ff; --violet-soft:#2b2360; --sun:#ffc531; --sun-deep:#ff9f1c; --mint:#38d6b4; --mint-soft:#163b34; --pink:#ff7aa8;
+  --code:#171231; --shadow:0 10px 30px rgba(0,0,0,.4); color-scheme:dark }
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.6;font-size:15px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--side)}
+a{color:var(--violet)}
+.shell{display:grid;grid-template-columns:240px 1fr;min-height:100%}
+aside{background:linear-gradient(180deg,var(--side),var(--side-2));color:#fff;padding-block:22px 28px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:16px;position:sticky;top:0;height:100vh;overflow:auto;display:flex;flex-direction:column;gap:6px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-size:22px;margin-bottom:14px}
+.brand .logo{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--sun),var(--pink));display:grid;place-items:center;overflow:hidden;flex:0 0 auto}
+.brand .logo img{width:100%;height:100%;object-fit:contain}
+.side-label{font-size:11px;letter-spacing:.14em;color:rgba(255,255,255,.55);margin:14px 0 4px;font-weight:700}
+aside button{display:flex;align-items:center;gap:12px;width:100%;border:0;background:transparent;color:#fff;font:inherit;font-weight:700;font-size:15px;padding:9px 10px;border-radius:14px;cursor:pointer;text-align:left}
+aside button[aria-selected="true"]{background:rgba(255,255,255,.14)}
+aside button:focus-visible{outline:2px solid var(--sun);outline-offset:2px}
+.n{width:26px;height:26px;border-radius:50%;background:var(--sun);color:var(--side);font-family:var(--display);font-size:14px;display:grid;place-items:center;flex:0 0 auto}
+.n.v{background:var(--violet);color:#fff}
+.mascot{margin-top:auto;text-align:center;padding:10px 0 0}
+.mascot img{width:150px;max-width:100%;filter:drop-shadow(0 12px 18px rgba(0,0,0,.35))}
+.mascot .ph{width:140px;height:140px;margin:0 auto;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff 0,rgba(255,255,255,.2) 20%,transparent 21%),linear-gradient(145deg,#8f7bff,#4b35b8);display:grid;place-items:center;font-family:var(--display);color:#fff;font-size:15px;text-align:center;line-height:1.3;padding:14px}
+.mascot p{font-size:12px;color:rgba(255,255,255,.6);margin:8px 0 0}
+main{min-width:0;padding-block:18px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.topbar h1{font-family:var(--display);font-size:22px;margin:0;font-weight:400}
+.topbar h1 small{font-family:var(--body);font-size:13px;color:var(--ink-2);margin-left:8px;font-weight:500}
+.pill{display:inline-flex;align-items:center;gap:6px;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:13px;font-weight:700;box-shadow:var(--shadow)}
+.pill .dot{width:10px;height:10px;border-radius:50%;background:var(--mint)}
+.hero{position:relative;border-radius:28px;overflow:hidden;min-height:330px;box-shadow:var(--shadow);background:linear-gradient(120deg,#5a3fd6 0%,#8a6bff 45%,#ffb85c 100%);color:#fff;isolation:isolate}
+.hero img.art{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.hero .shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(32,20,90,.78) 0%,rgba(32,20,90,.45) 55%,rgba(32,20,90,.1) 100%);z-index:1}
+.hero .orb{position:absolute;border-radius:50%;background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.7),rgba(255,255,255,.08) 60%,transparent 70%);z-index:1}
+.hero .in{position:relative;z-index:2;padding:34px 36px;max-width:560px;word-break:keep-all}
+.hero .tag{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:5px 14px;font-size:13px;font-weight:700;backdrop-filter:blur(4px)}
+.hero h2{word-break:keep-all;font-family:var(--display);font-size:clamp(30px,4.6vw,50px);line-height:1.15;margin:14px 0 10px;font-weight:400;text-shadow:0 4px 18px rgba(0,0,0,.35)}
+.hero h2 em{font-style:normal;color:var(--sun)}
+.hero p{margin:0 0 20px;font-size:16px;opacity:.95;max-width:48ch}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{font:inherit;font-weight:900;font-size:15px;padding:12px 22px;border-radius:999px;border:0;cursor:pointer;box-shadow:0 6px 0 rgba(0,0,0,.18);transition:transform .08s}
+.btn:active{transform:translateY(3px);box-shadow:0 3px 0 rgba(0,0,0,.18)}
+.btn.sun{background:linear-gradient(180deg,var(--sun),var(--sun-deep));color:#3a2a00}
+.btn.glass{background:rgba(255,255,255,.22);color:#fff;border:1.5px solid rgba(255,255,255,.5);backdrop-filter:blur(4px);box-shadow:none}
+.btn:focus-visible{outline:3px solid #fff;outline-offset:2px}
+section.view{padding-top:24px}
+h3.sec{font-family:var(--display);font-size:26px;margin:0 0 4px;font-weight:400}
+h3.sec span{color:var(--violet)}
+.sub{color:var(--ink-2);margin:0 0 18px;max-width:65ch}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.card{background:var(--paper);border-radius:var(--r);padding:18px 20px;box-shadow:var(--shadow);min-width:0;position:relative;overflow:hidden}
+.card h4{font-family:var(--display);font-size:20px;margin:0 0 6px;font-weight:400;display:flex;align-items:center;gap:10px}
+.card p{margin:0;color:var(--ink-2);font-size:14px}
+.card ul{margin:8px 0 0;padding-left:18px;color:var(--ink-2);font-size:14px}
+.card .ico{width:64px;height:64px;border-radius:18px;background:var(--violet-soft);display:grid;place-items:center;margin-bottom:12px;overflow:hidden}
+.card .ico img{width:100%;height:100%;object-fit:contain}
+.card .ico svg{width:34px;height:34px}
+.lab{display:inline-block;background:var(--mint-soft);color:#0c6b58;font-size:12px;font-weight:900;padding:2px 9px;border-radius:999px;margin-right:6px}
+:root[data-theme="dark"] .lab,:root:not([data-theme="light"]) .lab{color:var(--mint)}
+.principle{margin-top:22px;background:linear-gradient(135deg,var(--violet-soft),var(--mint-soft));border-radius:var(--r);padding:18px 22px;display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center}
+.principle .big{font-family:var(--display);font-size:46px;color:var(--violet);line-height:1}
+.principle ol{margin:4px 0 0;padding-left:20px}
+/* prompts */
+.toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:12px}
+.toolbar input{flex:1 1 220px;min-width:0;font:inherit;padding:12px 18px;border:2px solid var(--line);border-radius:999px;background:var(--paper);color:var(--ink)}
+.toolbar input:focus{outline:none;border-color:var(--violet)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.chips button{font:inherit;font-size:13px;font-weight:700;padding:7px 14px;border-radius:999px;border:2px solid var(--line);background:var(--paper);color:var(--ink-2);cursor:pointer}
+.chips button[aria-pressed="true"]{background:var(--violet);border-color:var(--violet);color:#fff}
+.count{font-size:13px;color:var(--ink-2);margin:0 0 12px}
+.plist{display:grid;gap:14px}
+.pcard{background:var(--paper);border-radius:var(--r);padding:18px 20px;box-shadow:var(--shadow);min-width:0}
+.pcard header{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;margin-bottom:6px}
+.pcard .grp{font-size:12px;color:var(--violet);font-weight:900;background:var(--violet-soft);padding:2px 10px;border-radius:999px}
+.pcard .tool{font-size:12px;background:var(--mint-soft);color:#0c6b58;padding:2px 10px;border-radius:999px;font-weight:900}
+.pcard h4{font-family:var(--display);font-size:20px;margin:4px 0 2px;width:100%;font-weight:400}
+.pcard .when{color:var(--ink-2);font-size:13px;margin:0 0 10px;width:100%}
+pre.prompt{white-space:pre-wrap;word-break:break-word;font-family:var(--body);font-size:14px;line-height:1.65;background:var(--code);border:2px dashed var(--line);border-radius:16px;padding:14px 16px;margin:0;max-height:220px;overflow:hidden;position:relative}
+pre.prompt.open{max-height:none}
+pre.prompt:not(.open).long::after{content:"";position:absolute;left:0;right:0;bottom:0;height:60px;background:linear-gradient(transparent,var(--code))}
+.acts{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.acts button{font:inherit;font-size:13px;font-weight:900;padding:8px 16px;border-radius:999px;border:2px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer}
+.acts button.primary{background:var(--violet);color:#fff;border-color:var(--violet)}
+.acts button:focus-visible{outline:2px solid var(--sun);outline-offset:2px}
+.files{margin:0;padding-left:18px}
+.files li{margin:4px 0}
+.callout{background:linear-gradient(135deg,#fff3c4,#ffe0a3);color:#3a2a00;border-radius:var(--r);padding:14px 18px;margin:16px 0}
+.linkbox{display:flex;flex-wrap:wrap;gap:10px;align-items:center;background:var(--paper);border-radius:var(--r);padding:14px 18px;box-shadow:var(--shadow)}
+.linkbox code{font-family:var(--body);background:var(--code);padding:4px 10px;border-radius:8px;word-break:break-all}
+.badge-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:14px}
+.badge{width:120px;text-align:center;font-size:12px;color:var(--ink-2)}
+.badge .b{width:96px;height:96px;margin:0 auto 6px;border-radius:50%;background:conic-gradient(from 200deg,var(--sun),var(--pink),var(--violet),var(--mint),var(--sun));padding:5px}
+.badge .b div{width:100%;height:100%;border-radius:50%;background:var(--paper);display:grid;place-items:center;font-family:var(--display);color:var(--violet);font-size:14px;overflow:hidden}
+.badge .b img{width:100%;height:100%;object-fit:contain}
+footer{margin-top:40px;color:var(--ink-2);font-size:13px;border-top:1px solid var(--line);padding-top:16px}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--violet);color:#fff;padding:10px 18px;border-radius:999px;font-weight:900;font-size:14px;opacity:0;transition:opacity .2s;pointer-events:none;z-index:20}
+.toast.show{opacity:1}
+@media (max-width:820px){
+  .shell{grid-template-columns:1fr}
+  aside{position:static;height:auto;flex-direction:row;flex-wrap:wrap;align-items:center;gap:6px;padding-block:12px;padding-right:max(16px,env(safe-area-inset-right,0px))}
+  .brand{width:100%;margin-bottom:4px}
+  .side-label{display:none}
+  aside button{width:auto;padding:7px 12px;font-size:14px}
+  .mascot{display:none}
+  .hero .in{padding:26px 22px}
+}
+@media (prefers-reduced-motion:reduce){ .toast,.btn{transition:none} }
+</style>
+
+</head>
+<body>
+<div class="shell">
+<aside>
+  <div class="brand"><span class="logo"><img src="img/noti.png" alt="" onerror="this.remove()"></span><span>연수 아카이브</span></div>
+  <div class="side-label">연수 순서</div>
+  <button role="tab" data-view="home" aria-selected="true"><span class="n v">홈</span>시작하기</button>
+  <button role="tab" data-view="flow"><span class="n">Ⅰ</span>연수 흐름</button>
+  <button role="tab" data-view="prompts"><span class="n">Ⅱ</span>프롬프트 저장소</button>
+  <button role="tab" data-view="materials"><span class="n">Ⅲ</span>실습 자료·링크</button>
+  <button role="tab" data-view="tips"><span class="n">Ⅳ</span>검토·유의점</button>
+  <button role="tab" data-view="share"><span class="n">Ⅴ</span>결과물 나눔</button>
+  <div class="mascot"><img src="img/noti.png" alt="아카이브 도우미 노티" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'노티 그림 자리 (img/noti.png)'}))"><p>아카이브 도우미 노티</p></div>
+</aside>
+
+<main>
+  <div class="topbar"><h1>덕천초 노트북LM 연수 <small>2026 교원 연수</small></h1><span class="pill"><span class="dot"></span>강사 최일훈</span></div>
+
+  <section class="view" id="view-home">
+    <div class="hero">
+      <img class="art" src="img/hero.webp" alt="" onerror="this.remove()">
+      <div class="shade"></div>
+      <div class="orb" style="width:260px;height:260px;right:120px;top:-60px"></div>
+      <div class="orb" style="width:140px;height:140px;right:40px;bottom:30px"></div>
+      <div class="in">
+        <span class="tag">덕천초등학교 선생님을 위한 연수</span>
+        <h2>노트북LM으로<br><em>수업</em>과 <em>업무</em>를 바꾸는 하루</h2>
+        <p>내 자료에서 답을 찾는 AI. 교과서 한 권으로 슬라이드·오디오·영상을 만들고, 학교교육계획 한 파일로 업무 챗봇을 세웁니다.</p>
+        <div class="btns"><button class="btn sun" data-go="flow">▶ 연수 흐름</button><button class="btn glass" data-go="prompts">프롬프트 저장소</button><button class="btn glass" data-go="share">결과물 나눔</button></div>
+      </div>
+    </div>
+    <h3 class="sec" style="margin-top:26px">오늘 <span>가져가실 것</span></h3>
+    <div class="cards">
+      <div class="card"><div class="ico"><img src="img/ico_source.png" alt="" onerror="this.replaceWith(ICON('src'))"></div><h4>근거 있는 답</h4><p>교과서·공문·규정을 소스로 넣고, 소스 안에서만 답하게 하는 법</p></div>
+      <div class="card"><div class="ico"><img src="img/ico_slides.png" alt="" onerror="this.replaceWith(ICON('slides'))"></div><h4>수업 자료 한 세트</h4><p>슬라이드 → 오디오 → 동영상 → 인포그래픽, 같은 소스로 한 번에</p></div>
+      <div class="card"><div class="ico"><img src="img/ico_work.png" alt="" onerror="this.replaceWith(ICON('work'))"></div><h4>업무 10분 단축</h4><p>회의 녹음 → 회의록, HWPX 서식 채우기, 메시지 작성실</p></div>
+      <div class="card"><div class="ico"><img src="img/ico_check.png" alt="" onerror="this.replaceWith(ICON('check'))"></div><h4>그대로 쓰지 않는 습관</h4><p>추론 표시, 질문으로 끝내기, 교사가 다시 확인하는 네 가지</p></div>
+    </div>
+  </section>
+
+  <section class="view" id="view-flow" hidden>
+    <h3 class="sec">연수 <span>흐름</span></h3>
+    <p class="sub">다섯 부분으로 진행합니다. 실습은 프롬프트 저장소의 같은 번호 묶음에서 바로 복사할 수 있습니다.</p>
+    <div class="cards">
+      <div class="card"><div class="ico"><img src="img/part1.png" alt="" onerror="this.replaceWith(ICON('1'))"></div><h4>Ⅰ AI 시대와 노트북LM</h4><p>직장인·교사·학생의 AI 활용 현황, 교육자의 역할 변화(제작자 → 활용자), 생성형 AI 지형도와 NotebookLM이 다른 점.</p></div>
+      <div class="card"><div class="ico"><img src="img/part2.png" alt="" onerror="this.replaceWith(ICON('2'))"></div><h4>Ⅱ NotebookLM 시작하기</h4><p>소스 · 채팅 · 스튜디오 3단 패널, 소스 넣기, 채팅 설정으로 전문가 역할 주기.</p><ul><li><span class="lab">실습 1</span>규정·매뉴얼 챗봇</li><li><span class="lab">실습 2</span>교과서 읽히고 추론 확인</li></ul></div>
+      <div class="card"><div class="ico"><img src="img/part3.png" alt="" onerror="this.replaceWith(ICON('3'))"></div><h4>Ⅲ 교수·학습 자료 제작 심화</h4><p>교과서 PDF + 3×3 캐릭터 PNG로 슬라이드 → 오디오 → 동영상 → 인포그래픽·플래시카드. 그림동화책 슬라이드.</p><ul><li><span class="lab">실습 3</span>개요 → 슬라이드 → 캐릭터</li><li><span class="lab">실습 4</span>오디오 토론 · Short/Explainer</li><li><span class="lab">실습 5</span>인포그래픽·마인드맵·플래시카드</li></ul></div>
+      <div class="card"><div class="ico"><img src="img/part4.png" alt="" onerror="this.replaceWith(ICON('4'))"></div><h4>Ⅳ 업무 지원 자료 제작</h4><p>학교교육계획 올인원, 공문 체크리스트, 회의 녹음 → 회의록, HWPX 서식 채우기, 교사 메시지 작성실.</p><ul><li><span class="lab">실습 6</span>교육계획 챗봇 + 총회 슬라이드</li><li><span class="lab">실습 7</span>HWPX 회의록 · 가정통신문</li></ul></div>
+      <div class="card"><div class="ico"><img src="img/part5.png" alt="" onerror="this.replaceWith(ICON('5'))"></div><h4>Ⅴ AI 활용 시 유의점</h4><p>정확성, 저작권, 개인정보, 비판적 사고. 결과물을 그대로 쓰지 않는 습관.</p></div>
+    </div>
+    <div class="principle"><div class="big">4</div><div><b>오늘 모든 실습의 공통 원칙</b><ol><li>자료(소스)에 근거하게 한다. 없는 내용은 "추론"으로 표시하게 한다.</li><li>학생용 자료는 정답을 먼저 말하지 않고 질문으로 끝내게 한다.</li><li>결과물을 그대로 쓰지 않는다. 교과 정확성·학생 수준·수업 목적을 교사가 다시 확인한다.</li><li>개요 → 생성 → 검토 → 수정의 순서로 대화한다.</li></ol></div></div>
+  </section>
+
+  <section class="view" id="view-prompts" hidden>
+    <h3 class="sec">프롬프트 <span>저장소</span></h3>
+    <p class="sub">[ ] 안은 우리 반·우리 학교에 맞게 바꾸는 자리입니다. 복사 뒤 학년·교과·단원·인원만 고쳐도 바로 쓸 수 있습니다.</p>
+    <div class="toolbar"><input id="q" type="search" placeholder="검색: 슬라이드, 회의록, 가정통신문, 플래시카드…" aria-label="프롬프트 검색"></div>
+    <div class="chips" id="chips"></div>
+    <p class="count" id="count"></p>
+    <div class="plist" id="plist"></div>
+  </section>
+
+  <section class="view" id="view-materials" hidden>
+    <h3 class="sec">실습 <span>자료·링크</span></h3>
+    <p class="sub">연수 중 실제로 열어 쓰는 사이트와 파일입니다. 파일은 연수 패들렛의 '실습파일' 칸에서 내려받습니다.</p>
+    <div class="cards">
+      <div class="card"><h4>NotebookLM</h4><p>소스 올리기 · 채팅 · 스튜디오(오디오·동영상·슬라이드·인포그래픽·플래시카드)</p><p style="margin-top:8px"><a href="https://notebooklm.google.com/" target="_blank" rel="noopener"><b>열기 ↗</b></a></p></div>
+      <div class="card"><h4>Gemini</h4><p>캐릭터·삽화 생성, Storybook, HWPX 서식 채우기, Project(메시지 작성실)</p><p style="margin-top:8px"><a href="https://gemini.google.com/app" target="_blank" rel="noopener"><b>열기 ↗</b></a></p></div>
+      <div class="card"><h4>Google Flow</h4><p>이미지 → 8초 영상, 2×2 스토리보드 에이전트</p><p style="margin-top:8px"><a href="https://labs.google/flow" target="_blank" rel="noopener"><b>열기 ↗</b></a></p></div>
+      <div class="card"><h4>ChatGPT</h4><p>완성형 그림동화책 PPTX/PDF, 이미지 안에 한글까지 생성</p><p style="margin-top:8px"><a href="https://chatgpt.com/" target="_blank" rel="noopener"><b>열기 ↗</b></a></p></div>
+      <div class="card"><h4>노트북LM 리무버</h4><p>슬라이드·인포그래픽 결과물의 워터마크 정리</p><p style="margin-top:8px"><a href="https://notebooklmremover.com/ko" target="_blank" rel="noopener"><b>열기 ↗</b></a></p></div>
+      <div class="card"><h4>Canva · ZoomIt</h4><p>생성 결과 세부 수정 / 연수·수업 중 화면 확대와 판서</p><p style="margin-top:8px"><a href="https://www.canva.com/" target="_blank" rel="noopener"><b>Canva ↗</b></a> &nbsp; <a href="https://learn.microsoft.com/ko-kr/sysinternals/downloads/zoomit" target="_blank" rel="noopener"><b>ZoomIt ↗</b></a></p></div>
+    </div>
+    <h3 class="sec" style="margin-top:24px;font-size:20px">실습 파일 <span>(패들렛 '실습파일' 칸)</span></h3>
+    <div class="card"><ul class="files">
+      <li><b>재료 1</b> 교과서 PDF — 3학년 2학기 사회 「교통의 변화로 달라진 생활 모습」(105~107쪽), 5학년 1학기 과학 「지층과 화석」</li>
+      <li><b>재료 2</b> 3×3 캐릭터 PNG — 슬라이드 디자인과 등장인물의 기준이 되는 학급 캐릭터 세트</li>
+      <li>2022 개정 교육과정 성취기준 PDF</li>
+      <li>학교교육계획 PDF (올인원 챗봇·총회 PPT 실습)</li>
+      <li>HWPX 서식: 교수학습과정안 · 회의록 · 물품선정위원회 회의록 · 가정통신문 · 수업협의록</li>
+      <li>가상 회의 녹음(mp3) — 회의록 자동 작성 실습</li>
+    </ul></div>
+    <div class="callout"><b>연수 계정</b> 구글 계정이 없거나 학교 계정이 제한되어 있으면 연수용 계정을 안내합니다. 개인 계정을 쓰셔도 됩니다. 실습 결과물에 학생 개인정보가 들어가지 않게 가명·예시 자료만 사용하세요.</div>
+  </section>
+
+  <section class="view" id="view-tips" hidden>
+    <h3 class="sec">검토 · <span>유의점</span></h3>
+    <p class="sub">AI가 만든 것을 교실과 공문서에 쓰기 전, 교사가 확인하는 것들입니다.</p>
+    <div class="cards">
+      <div class="card"><h4>정보의 정확성</h4><p>교과서·지침과 대조한다. "이 답변 중 소스에 없는 내용이 있다면 어디인지 표시해줘"로 근거를 되묻는다.</p></div>
+      <div class="card"><h4>저작권</h4><p>생성 이미지·음성·영상의 출처와 이용 범위를 확인하고, 교과서 PDF는 수업 목적 범위 안에서만 소스로 쓴다.</p></div>
+      <div class="card"><h4>개인정보</h4><p>학생 이름·사진·성적·상담 내용을 소스로 올리지 않는다. 생기부·상담 기록은 가명 처리 후 구조만 참고한다.</p></div>
+      <div class="card"><h4>비판적 사고</h4><p>학생에게 AI 결과물을 보여줄 때는 "맞는지 함께 확인해 보자"는 활동으로 설계한다. 정답을 먼저 주지 않는다.</p></div>
+      <div class="card"><h4>학생 수준</h4><p>어휘·문장 길이·장면 수를 학년에 맞게 다시 요청한다. "글을 2~3문장 이내로 줄여줘", "쉬운 말로 바꿔줘".</p></div>
+      <div class="card"><h4>공문서 사실 확인</h4><p>회의록·계획서는 "확실하지 않은 내용은 '확인 필요'로 표시"하게 하고, 날짜·수치·담당자는 교사가 채운다.</p></div>
+    </div>
+  </section>
+
+  <section class="view" id="view-share" hidden>
+    <h3 class="sec">결과물 <span>나눔</span></h3>
+    <p class="sub">실습에서 만든 슬라이드·오디오·영상·회의록을 패들렛에 올려 서로 보고, 연수 뒤에도 꺼내 쓸 수 있게 합니다.</p>
+    <div class="linkbox"><b>연수 패들렛</b><code id="padlet-url">연수 당일 QR로 안내</code></div>
+    <div class="callout"><b>올리는 방법</b> 패들렛 → 우리 반 칸 선택 → ＋ → 제목에 「학년-교과-주제」 → 파일 첨부 또는 NotebookLM 공유 링크 붙여넣기. 오디오·영상은 NotebookLM에서 다운로드한 파일을 올립니다.</div>
+    <h3 class="sec" style="font-size:20px">오늘의 <span>배지</span></h3>
+    <p class="sub">실습을 하나 마칠 때마다 하나씩. 다섯 개를 모으면 노트북LM 디자이너!</p>
+    <div class="badge-row">
+      <div class="badge"><div class="b"><div><img src="img/badge1.png" alt="" onerror="this.replaceWith('규정 챗봇')"></div></div>실습 1·2</div>
+      <div class="badge"><div class="b"><div><img src="img/badge2.png" alt="" onerror="this.replaceWith('슬라이드')"></div></div>실습 3</div>
+      <div class="badge"><div class="b"><div><img src="img/badge3.png" alt="" onerror="this.replaceWith('오디오·영상')"></div></div>실습 4·5</div>
+      <div class="badge"><div class="b"><div><img src="img/badge4.png" alt="" onerror="this.replaceWith('업무 마스터')"></div></div>실습 6·7</div>
+      <div class="badge"><div class="b"><div><img src="img/badge5.png" alt="" onerror="this.replaceWith('디자이너')"></div></div>전체 완주</div>
+    </div>
+    <div class="card" style="margin-top:16px"><h4>나눌 때 한 줄 메모</h4><ul class="files"><li>어떤 소스를 넣었는지 (교과서 쪽수, 캐릭터 세트)</li><li>어떤 프롬프트를 썼는지 (저장소 번호)</li><li>다시 만든다면 바꾸고 싶은 점 한 가지</li></ul></div>
+  </section>
+
+  <footer>덕천초등학교 교원 연수 「노트북LM 및 생성형 AI를 활용한 수업과 업무 개선」 · 강사 최일훈 · 프롬프트는 『교실이 달라진다! 선생님을 위한 제미나이 노트북』과 연수 실습에서 정리한 것입니다.</footer>
+</main>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite">복사했습니다</div>
+
+<script>
+const PADLET_URL = ""; // 덕천초 연수 패들렛 주소를 만든 뒤 여기에 넣으세요.
+function ICON(k){
+  const s=document.createElementNS('http://www.w3.org/2000/svg','svg'); s.setAttribute('viewBox','0 0 24 24'); s.setAttribute('fill','none'); s.setAttribute('stroke','#6d4df2'); s.setAttribute('stroke-width','2'); s.setAttribute('stroke-linecap','round'); s.setAttribute('stroke-linejoin','round');
+  const d={src:'M4 4h12l4 4v12H4z M16 4v4h4 M8 13h8 M8 17h5',slides:'M3 5h18v12H3z M8 21h8 M12 17v4 M7 13l3-3 3 2 4-4',work:'M4 7h16v13H4z M9 7V4h6v3 M4 12h16',check:'M20 6L9 17l-5-5',
+    '1':'M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18z M12 8v4l3 2','2':'M4 5h16v14H4z M4 10h16 M9 10v9','3':'M3 6h18v11H3z M8 21h8 M12 17v4','4':'M5 3h14v18H5z M9 8h6 M9 12h6 M9 16h3','5':'M12 3l8 4v6c0 4-3.5 7-8 8-4.5-1-8-4-8-8V7z M9 12l2 2 4-4'};
+  const p=document.createElementNS('http://www.w3.org/2000/svg','path'); p.setAttribute('d',d[k]||d.src); s.append(p); return s;
+}
+const GROUPS = ["Ⅱ 시작하기","Ⅱ 교과서→수업 설계","Ⅲ 슬라이드","Ⅲ 오디오·동영상·시각자료","Ⅲ 동화·영상(심화)","Ⅳ 업무","Ⅴ 검토"];
+const P = [
+{g:0,t:"수업 설계 전문가 역할 주기",tool:"NotebookLM · 채팅 설정",when:"노트북을 만들고 첫 질문을 하기 전, 채팅 설정(맞춤설정)에 넣어 둡니다.",p:`당신은 초등학교 [5]학년 담임 교사를 돕는 수업 설계 전문가입니다.
+모든 답변은 업로드된 소스와 2022 개정 교육과정 성취기준에 근거하여 작성하세요.
+학생 수준은 초등학교 [5]학년이며, 어렵거나 생소한 용어는 쉽게 풀어서 설명하세요.
+소스에 없는 내용을 추론할 경우 '(추론)'이라고 명시하고, 소스 내 근거를 반드시 함께 제시하세요.
+답변은 항상 한국어로, 쉽고 친근한 표현으로 작성하세요.`},
+{g:0,t:"교과서 PDF를 먼저 읽히기",tool:"NotebookLM · 채팅",when:"교과서 PDF를 소스로 올린 직후. 오늘 만들 모든 자료의 기준을 세웁니다.",p:`이 파일은 초등학교 [3]학년 [사회] 교과서야.
+오늘 이 파일을 모든 수업자료 제작의 기준 자료로 사용할 거야.
+특히 [105~107]쪽 '[교통의 변화로 달라진 사람들의 생활 모습]'을 중심으로 살펴봐줘.
+
+다음을 간단하게 정리해줘.
+1. 학생이 이해해야 할 핵심 내용
+2. 핵심 개념
+3. 학생들이 어려워할 만한 부분
+4. 예상되는 오개념
+5. 수업에서 던지면 좋은 질문
+6. 평가에서 확인할 내용
+
+교과서에 직접 근거한 내용과 네가 추가로 제안한 내용은 구분해줘.`},
+{g:0,t:"답변의 추론 여부 확인하기",tool:"NotebookLM · 채팅",when:"어떤 답변이든 수업·공문에 쓰기 전에 한 번.",p:`방금 답변 중 소스에 직접 언급되지 않고 추론으로 채운 부분이 있다면 어디인지 표시해줘.`},
+{g:0,t:"웹 리서치로 신뢰할 수 있는 소스 모으기",tool:"NotebookLM · 소스 추가(웹 검색)",when:"교과서 외에 보조 자료가 필요할 때. 출처 조건을 분명히 적습니다.",p:`초등 [4~5]학년 수준의 "[지층과 암석]" 관련 교육 자료를 수집해줘.
+포함 자료: 개념 설명, 형성 과정, 실제 사진·도해, 차시별 수업 활동, 학생용 학습지, 평가 예시
+신뢰 출처: 교육부·시도교육청 자료실, 에듀넷·티클리어, 한국과학창의재단, 국립중앙과학관·자연사박물관, RISS·DBpia 학술자료, 검정 교과서 출판사 자료
+제외: 개인 블로그, 출처 불명 자료, 상업적 사교육 사이트
+활용 목적: [4]학년 [과학] 수업 자료 제작 및 학생 탐구활동 설계`},
+{g:0,t:"나만의 규정·매뉴얼 챗봇 만들기",tool:"NotebookLM · 채팅 설정 + 채팅",when:"실습 1. 학교생활기록부 기재요령 PDF를 소스로 올리고, 설정 뒤 질문합니다.",p:`[채팅 설정]
+당신은 초등학교 교사의 학교생활기록부 작성을 돕는 안내 도우미입니다. 반드시 업로드된 기재요령 소스에 근거하여 답하고, 해당 쪽수를 함께 제시하세요. 소스에 없는 질문에는 "기재요령에 해당 내용이 없습니다"라고 답하세요.
+
+[질문 예시]
+- 행동특성 및 종합의견에 쓸 수 없는 표현은?
+- 전학 온 학생의 출결은 어떻게 기재해?
+- 2025년 지침과 비교했을 때 2026년에 어떤 변화가 있는지 정리해줘.`},
+
+{g:1,t:"40분 수업으로 설계하기",tool:"NotebookLM · 채팅",when:"교과서 분석을 받은 다음 단계. 학급 조건을 바꿔 넣습니다.",p:`좋아. 이 내용을 초등학교 [3]학년 40분 [사회] 수업으로 설계해줘.
+
+조건:
+- 학생 [24]명, 일반 교실
+- 교사 설명 최소화, 학생 활동 중심
+- [옛날과 오늘날의 이동 모습을 직접 비교]하게 할 것
+- 학생끼리 생각을 이야기하는 장면 포함
+- 준비물 최소화
+- 도입 5분, 정리 5분
+
+각 단계마다 시간 / 교사 활동 / 학생 활동 / 핵심 발문 / 예상 학생 반응을 제시해줘.`},
+{g:1,t:"경력 교사 관점으로 다시 검토하기",tool:"NotebookLM · 채팅",when:"AI가 만든 수업안을 그대로 쓰지 않고 현실성을 점검할 때.",p:`방금 만든 수업을 경력 많은 초등교사의 관점에서 검토해줘.
+- 40분 안에 가능한가?
+- 초등학교 [3]학년 수준에 적절한가?
+- 학생이 수동적으로 듣기만 하는 부분은 없는가?
+- 교과서 내용에서 지나치게 벗어나지 않았는가?
+
+지적한 문제를 반영해서 최종 수업안으로 다시 만들어줘.`},
+{g:1,t:"단원 요약과 '오늘의 핵심 한 줄'",tool:"NotebookLM · 보고서",when:"단원 도입 판서나 학습 안내문을 만들 때.",p:`1. 업로드한 교과서 단원을 초등학교 [5]학년이 이해할 수 있는 쉬운 말로 정리해줘.
+2. 이 단원에서 꼭 알아야 할 핵심 내용 5가지를 한 문장씩 정리해줘.
+마지막에 '오늘의 핵심 한 줄'로 단원 전체를 한 문장으로 요약해줘.`},
+{g:1,t:"수준별 빈칸 채우기 학습지",tool:"NotebookLM · 채팅",when:"보충·심화 두 버전을 한 번에 받을 때.",p:`소스의 내용을 바탕으로 초등학교 [5]학년 학생용 빈칸 채우기 학습지를 만들어줘.
+- 문항 수: 15개
+- 난이도 하(보충): 빈칸 옆에 괄호로 짧은 힌트 포함
+- 난이도 상(심화): 힌트 없이 빈칸만
+- 두 버전을 구분선으로 나눠서 한 번에 출력해줘.
+- 정답은 각 버전 아래에 번호 순서대로 정리해줘.`},
+{g:1,t:"4지선다·OX 형성평가 퀴즈",tool:"NotebookLM · 채팅",when:"차시 끝 형성평가. 매력적인 오답과 소스 근거 해설까지.",p:`초등학교 [5]학년 수준에 맞게 아래 조건으로 퀴즈를 만들어줘.
+- 4지선다형 문항 3개: 핵심 개념을 묻되 매력적인 오답 반드시 포함
+- OX형 문항 2개: 학생들이 헷갈리기 쉬운 내용으로 구성
+- 각 문항 아래에 정답과 소스 근거 해설을 초등학생이 이해할 수 있는 말로 달아줘.`},
+{g:1,t:"오개념 OX 문항과 해설",tool:"NotebookLM · 채팅",when:"학생이 자주 틀리는 지점을 미리 잡을 때.",p:`소스를 바탕으로 학생들이 흔히 가질 수 있는 오개념 5가지를 추출해줘.
+각 오개념을 OX 문항으로 만들고, 정답과 함께 아래 항목을 표 형식으로 제시해줘.
+- 오개념: 학생들이 잘못 알기 쉬운 내용
+- 정답: O 또는 X
+- 오답 시 근거: 소스의 논리를 사용해 왜 틀렸는지 설명
+- 관련 개념 정리: 올바른 개념을 한 문장으로 요약`},
+
+{g:2,t:"STEP 0 재료 투입: 교과서 PDF + 3×3 캐릭터 PNG",tool:"NotebookLM · 소스",when:"슬라이드 실습의 시작. 재료 두 가지를 소스로 올린 뒤 아래 한 줄을 채팅에 입력해 확인합니다.",p:`[재료 1] 교과서 PDF — 학습 내용과 목차의 기준
+[재료 2] 3×3 캐릭터 PNG — 디자인과 등장인물의 기준
+
+소스에 등록된 캐릭터 이미지를 설명해줘. 각 캐릭터의 생김새, 옷, 분위기를 한 줄씩 정리하고, 이 캐릭터들이 어울릴 만한 수업 장면을 제안해줘.`},
+{g:2,t:"슬라이드 개요 15장 먼저 받기",tool:"NotebookLM · 채팅",when:"바로 생성하지 말고 개요부터. 개요를 복사해 다음 프롬프트에 붙입니다.",p:`[옛날과 오늘날의 교통수단 변화(가마, 말, 자전거, 자동차, KTX 등), 교통의 발달에 따른 사람들의 생활 변화]를 주제로 초등학교 [3~4]학년 교육용 슬라이드 15장의 개요를 짜줘.
+각 슬라이드의 제목과 핵심 내용을 번호 순서대로 나열해줘.`},
+{g:2,t:"1차 슬라이드 생성: 프롬프트 해부",tool:"NotebookLM · 스튜디오 › 슬라이드",when:"역할·대상 / 내용·시각 기준 / 디자인 통일성, 세 덩어리를 꼭 넣습니다. '개요 지침 복사 + 지금 생성' 클릭.",p:`[역할 및 대상]
+초등학생을 대상으로 하는 수업용 발표자 슬라이드 1~12장을 아래 개요에 맞게 만들어줘.
+
+[내용 및 시각 기준]
+업로드한 교과서 자료를 내용 기준으로 삼고, 소스에 등록된 캐릭터를 학습 내용에 어울리게 배치해줘.
+
+[디자인 통일성]
+깔끔하고 세련된 일러스트 스타일. 제목/주요 글자는 크고 선명하게. 복잡한 문장보다는 핵심 개념과 이미지 중심으로. 우측 하단 영역은 모든 슬라이드에서 동일한 단색으로 처리해줘.
+
+[개요]
+(앞에서 받은 1~12장 개요 붙여넣기)`},
+{g:2,t:"소스 재등록으로 20장 제한 넘기기",tool:"NotebookLM · 스튜디오 › 슬라이드",when:"1차 결과(PDF)를 다운로드 → 다시 소스로 올린 뒤, 이어지는 장을 같은 디자인으로 만듭니다.",p:`아래 개요를 바탕으로 [13~24]장 슬라이드를 만들어줘.
+이때 방금 소스로 재등록한 '[1차_슬라이드.pdf]' 파일의 디자인 템플릿과 레이아웃을 참고하여 전체적인 일관성을 유지해줘.
+슬라이드 스타일은 이전 패키지와 동일하게 깔끔하고 세련되면서도, 초등학생이 친근감을 느끼도록 귀여운 분위기를 살려줘.
+소스의 캐릭터가 슬라이드 곳곳의 내용에 어울리게 등장하도록 자연스럽게 배치하고, 우측 하단 영역은 모든 슬라이드가 똑같은 단색이 되도록 해줘.
+
+[개요]
+(13~24장 개요 붙여넣기)`},
+{g:2,t:"슬라이드 한 장만 고치기",tool:"NotebookLM · 슬라이드 › 수정",when:"전체를 다시 만들지 않고 특정 장만. 한 번에 한 가지씩 요청합니다.",p:`[제목·본문] 제목을 '[모두 함께 신나는 전통 놀이]'로 바꾸고, 본문을 '[전통 놀이의 진짜 재미는 승패가 아니라, 이웃 및 가족들과 함께 웃고 떠드는 시간에 있어요.]'로 수정해줘.
+
+[이미지] 이 슬라이드의 이미지를 수채화 스타일의 [전통 악기] 그림으로 바꿔줘.
+
+[배치] 텍스트를 왼쪽에, 이미지를 오른쪽에 배치해줘.`},
+{g:2,t:"저학년 그림책 스타일 슬라이드",tool:"NotebookLM · 스튜디오 › 슬라이드",when:"1~2학년 인성·안전 교육. 이미지 80%, 문장 하나.",p:`우리 학급 캐릭터 '[쓰로인]'이 주인공으로 등장하는 '[학교 폭력 예방]' 주제의 초등학교 1~2학년용 그림책 스타일 슬라이드 10장을 만들어줘.
+각 장면은 이미지가 화면의 80% 이상을 채우고, 하단에 큰 글씨로 짧은 문장 하나만 넣어줘.
+텍스트는 1~2학년이 읽을 수 있게 짧고 쉬운 문체로 써줘.
+소스의 캐릭터 세트에 있는 인물이 매 슬라이드마다 등장하게 해줘.
+(10장 장면 흐름 붙여넣기)`},
+
+{g:3,t:"오디오 오버뷰: 찬반 토론",tool:"NotebookLM · 스튜디오 › 오디오 오버뷰",when:"토론 수업 도입 자료. 맞춤설정 칸에 넣습니다.",p:`'[AI가 인간의 일자리를 대체해야 하는가]'를 주제로 찬성과 반대 입장에서 토론해줘.
+초등학교 [6]학년이 이해할 수 있는 수준으로, 실제 사례를 들어 설명해줘.`},
+{g:3,t:"오디오 오버뷰: 사투리로 생생하게",tool:"NotebookLM · 스튜디오 › 오디오 오버뷰",when:"학생 집중도를 올리고 싶을 때. 지역을 바꿔 보세요.",p:`남자 토론자는 경상도 사투리로, 여자 토론자는 전라도 사투리로, 억양도 세고 빠르게 대화해줘.
+초등학생 눈높이에 맞춰 쉽게 설명해줘.`},
+{g:3,t:"동영상 개요: 과학 설명 동영상",tool:"NotebookLM · 스튜디오 › 동영상 개요",when:"개념 설명 영상. 일상 예시를 지정하면 훨씬 좋아집니다.",p:`초등학교 [5]학년 학생들이 [용매, 용질, 용액, 용해]의 개념을 쉽게 이해할 수 있도록, [코코아 가루가 물에 녹는 과정]처럼 일상생활의 구체적인 예시를 중심으로 설명해줘.
+설명은 짧고 명확하게, 장면과 설명이 자연스럽게 연결되게 해줘.`},
+{g:3,t:"인포그래픽: 옛날·오늘날 대조 레이아웃",tool:"NotebookLM · 스튜디오 › 인포그래픽",when:"정리 자료. 색·레이아웃·강조 개수를 한 번에 지정합니다.",p:`초등학교 [3]학년 학생들이 바로 이해할 수 있도록 쉬운 어휘와 큰 그림 위주로 시각 자료를 만들어줘.
+전체 배색은 [파란색과 하늘색] 계열을 사용하고, 아이들의 흥미를 끌 수 있게 [복고풍 8비트 게임] 느낌으로 디자인해줘.
+레이아웃은 왼쪽에는 옛날 모습을, 오른쪽에는 오늘날 모습을 배치해서 한눈에 대조되도록 구성하고, 복잡한 설명 대신 3가지 핵심 요소만 크게 강조한 뒤 나머지 내용은 간략하게 정리해줘.`},
+{g:3,t:"마인드맵: 범위와 가지 수 정하기",tool:"NotebookLM · 스튜디오 › 마인드맵",when:"단원 정리. 소스 범위와 가지 수를 제한해야 깔끔합니다.",p:`[3학년 2단원] 내용만 참고해서 핵심 개념 위주로 마인드맵을 만들어줘.
+[편견의 종류, 발생 원인, 해결 방안] 세 가지만 가지로 포함해줘.
+교과서 PDF 소스만 사용해줘.`},
+{g:3,t:"플래시카드 12장",tool:"NotebookLM · 스튜디오 › 플래시카드",when:"복습·암기. 앞면/뒷면 짝을 지정합니다.",p:`업로드한 교과서 단원으로 초등학교 [6]학년 복습용 플래시카드 12장을 만들어줘.
+1. [소화·순환·호흡·배설 기관]의 '이름(앞면)'과 '하는 일(뒷면)'을 짝지어줘.
+2. 정의는 초등학생이 이해할 수 있는 쉬운 말로 써줘.`},
+{g:3,t:"Gemini 이미지: 수업용 캐릭터 3×3 세트",tool:"Gemini · 이미지 만들기",when:"슬라이드 재료 2 만들기. 한 장에 아홉 포즈를 넣어야 캐릭터가 일관됩니다.",p:`초등학교 수업 슬라이드에 쓸 학급 캐릭터 세트를 만들어줘.
+- 캐릭터: [노란 병아리 '쓰로인', 둥근 얼굴, 파란 스카프]
+- 한 장의 이미지 안에 3×3 격자로 9가지 포즈(인사, 질문, 설명, 놀람, 생각, 박수, 걷기, 책 읽기, 손들기)
+- 모든 칸에서 얼굴·색·옷이 동일할 것
+- 깔끔하고 귀여운 일러스트, 흰 배경, 글자 없음
+- 1:1 정사각형`},
+
+{g:4,t:"Storybook: 수업 도입 그림동화 한 번에",tool:"Gemini · Storybook",when:"교과서 PDF를 올린 뒤 첫 그림동화. 정답을 먼저 말하지 않게 합니다.",p:`첨부한 초등학교 [3]학년 [사회] 교과서 자료를 바탕으로 수업 도입에 사용할 storybook을 만들어 줘.
+
+[수업 주제] [교통의 변화로 달라진 사람들의 생활 모습]
+[대상] 초등학교 [3]학년
+[목적] 개념을 설명하는 학습 만화가 아니라, 수업을 시작할 때 학생들의 호기심을 일으키는 짧은 이야기
+
+[이야기] 옛날에 살던 어린이 '[도윤]'과 오늘날에 사는 어린이 '[하린]'이 각자의 시대에서 먼 곳에 있는 같은 목적지로 떠난다. 두 어린이가 이동하는 모습을 번갈아 보여 주면서 옛날과 오늘날의 교통수단과 이동 모습이 자연스럽게 비교되도록 해 줘.
+
+첨부한 교과서에 제시된 내용과 어긋나는 사실은 넣지 말고, 초등학교 [3]학년이 이해하기 쉬운 표현을 사용해 줘.
+중요: 처음부터 '교통의 발달로 생활이 편리해졌다'와 같은 정답을 설명하지 마. 학생들이 이야기를 보면서 차이를 스스로 발견하게 해 줘.
+마지막 페이지에서는 이야기를 멈추고 큰 글씨로 "[교통수단이 달라지면서 사람들의 생활은 어떻게 달라졌을까요?]"라고 질문하며 끝내 줘.
+따뜻하고 재미있는 어린이 그림책 스타일로 만들고, 등장인물의 모습이 페이지마다 일관되게 보이도록 해 줘.`},
+{g:4,t:"Storybook 다듬기: 글 줄이기·동기유발 강화",tool:"Gemini · Storybook",when:"첫 결과가 길거나 설명식일 때.",p:`수업 도입용으로는 글이 조금 많아. 각 페이지의 글을 2~3문장 이내로 줄여 줘. 설명보다 등장인물의 행동과 대화를 많이 사용해 줘.
+마지막 질문에 대한 정답이나 힌트는 앞부분에서 너무 직접적으로 알려주지 마.
+첫 페이지에서 학생들이 "어? 왜 이렇게 오래 걸리지?"라고 궁금해할 만한 사건을 먼저 보여 줘.
+두 주인공의 외모와 옷은 모든 페이지에서 가능한 한 일관되게 유지해 줘.`},
+{g:4,t:"그림동화책 형식 슬라이드 (NotebookLM)",tool:"NotebookLM · 스튜디오 › 슬라이드",when:"같은 교과서 소스를 '발표자료'가 아니라 '그림책 페이지'로.",p:`첨부된 초등학교 [3]학년 [사회] 교과서 자료를 바탕으로 수업 도입에 사용할 "그림동화책 형식의 슬라이드"를 만들어 줘.
+중요: 일반 발표용 PPT가 아니라 초등학생에게 보여 주는 짧은 그림동화책이어야 해. 각 슬라이드는 책의 한 페이지처럼 구성하고, 그림이 화면의 중심이 되게 해 줘.
+
+[형식]
+- 총 7~8장, 각 슬라이드의 글은 최대 1~2문장
+- 긴 설명문, 목록, 정리 문장 금지
+- 교과 개념을 직접 설명하지 말고 이야기와 장면으로 보여 줄 것
+- 등장인물의 외모와 분위기는 슬라이드마다 일관되게 유지
+- 각 페이지는 그림 80%, 글 20%
+
+[이야기 흐름]
+1장 표지: 옛날 어린이와 오늘날 어린이가 각각 길을 떠나려는 장면
+2~3장 옛날 어린이의 출발과 긴 여행 (배·말 등 교과서에 나온 이동 모습)
+4~5장 오늘날 어린이의 출발과 빠른 이동
+6장 두 여행을 한 장면 안에서 비교
+7장 교통의 변화로 달라진 생활 모습이 드러나는 장면 (정답 설명 금지)
+8장 "[교통의 변화로 사람들의 생활 모습은 어떻게 달라졌을까요?]" 질문만 크게
+
+[제한] 첨부한 교과서 자료에 근거할 것. 교과서에 없는 사실이나 수치를 임의로 추가하지 말 것. 마지막까지 정답을 직접 설명하지 말 것.`},
+{g:4,t:"Short vs Explainer 영상 비교",tool:"NotebookLM · 스튜디오 › 동영상 개요",when:"동기유발 슬라이드 PDF를 다시 소스로 올리고, 두 형식을 각각 생성해 비교합니다.",p:`[Short — 질문을 남기는 영상 / 동기유발 슬라이드 PDF만 선택]
+선택한 소스는 초등학교 [3]학년 [사회] 수업 도입을 위해 만든 동기유발 슬라이드 자료입니다. 이 자료를 바탕으로 초등학생이 흥미롭게 볼 수 있는 짧은 질문형 영상으로 만들어 주세요.
+- Short 형식, 짧고 몰입감 있게, 설명보다 장면 중심
+- 결론이나 정답은 설명하지 않는다
+- 마지막 화면에서 "[두 사람의 여행은 왜 이렇게 달랐을까요?]"를 크게 제시하며 끝낸다
+
+[Explainer — 이해를 돕는 영상 / 슬라이드 + 원본 교과서 함께 선택]
+동기유발 슬라이드의 이야기 흐름을 살리되, 원본 교과서 내용에 근거하여 짧고 이해하기 쉬운 설명형 영상으로 만들어 주세요.
+- Explainer 형식, 초등학교 [3]학년 수준의 쉬운 한국어
+- "같은 곳을 가는데 왜 이렇게 다를까요?"라는 질문으로 시작
+- 교과서에 없는 사실은 추가하지 말 것
+- 마지막은 "[교통의 변화는 사람들의 생활을 어떻게 바꾸었을까요?]"로 다시 생각하게 하며 마무리`},
+{g:4,t:"Flow: 이미지 한 장 → 8초 영상",tool:"Google Flow",when:"동기유발 장면 한 장을 만들고, 그 이미지를 움직입니다.",p:`[이미지]
+초등학교 [3]학년 [사회] 수업의 동기유발에 사용할 이미지를 만들어 줘.
+장면: 옛날에 사는 어린이가 먼 곳으로 여행을 떠나기 직전, 길 앞에 멈춰 서서 멀리 이어진 길을 바라보고 있다.
+조건: 따뜻하고 세련된 어린이 그림동화 스타일, 화면에 글자·말풍선·자막 없음, 이후 이미지→영상으로 움직이기 좋은 구도, 16:9
+
+[영상]
+이 이미지를 약 8초짜리 수업 동기유발 영상으로 만들어 줘.
+- 주인공이 잠시 먼 길을 바라본 뒤 천천히 2~3걸음 앞으로 움직인다
+- 바람에 옷과 풀이 아주 살짝 움직이고, 카메라는 천천히 뒤로 빠진다
+- 원본 이미지의 캐릭터·옷·그림체·배경을 유지, 장면 전환 없이 하나의 장면, 카메라 움직임은 하나만
+- 새로운 글자나 자막을 만들지 말 것`},
+{g:4,t:"ChatGPT: 완성형 그림동화책 PPTX/PDF (요약판)",tool:"ChatGPT",when:"교과서 PDF 하나로 '그림+한글이 이미지 안에 들어간' 8쪽 동화책 파일을 한 번에.",p:`첨부한 초등학교 교과서 자료를 바탕으로 수업 도입에 바로 사용할 수 있는 완성형 어린이 그림동화책을 제작해 줘. 아이디어나 초안만 제시하지 말고, 최종 결과물인 PPTX와 PDF 파일까지 완성해 줘.
+
+[기본] 대상 초등학교 [3]학년 / 주제 [교통의 변화로 달라진 사람들의 생활 모습] / 교과서에 없는 사실·수치는 추가하지 말 것
+[책 형식] 210mm×210mm 정사각형, 총 8쪽 (1쪽 표지, 2~7쪽 이야기, 8쪽 마지막 질문), 발표용 PPT처럼 보이지 말 것
+[이야기] 옛날 어린이와 오늘날 어린이가 각자 먼 곳으로 가는 모습. 정답을 초반에 말하지 말고 사건·행동·대화 중심, 각 쪽 1~2문장. 8쪽은 "[교통의 변화로 사람들의 생활 모습은 어떻게 달라졌을까요?]" 질문으로 끝
+[삽화와 한글 — 매우 중요] 각 페이지를 '완성된 그림책 한 페이지 이미지'로 직접 생성할 것. 제목·본문·질문 등 한글이 그림의 일부처럼 이미지 안에 함께 생성되어야 함. 글자 없는 삽화를 만든 뒤 코드·텍스트 상자로 한글을 덧씌우지 말 것. 오탈자가 있으면 해당 페이지 이미지를 다시 생성할 것
+[스타일] 따뜻한 현대 어린이 그림책 삽화, 등장인물의 얼굴·머리·옷·소품을 모든 쪽에서 일관되게
+[최종 파일] 8장의 완성 페이지 이미지를 그대로 한 장씩 배치한 PPTX(210×210mm)와 PDF. 이미지 위에 텍스트를 다시 쓰지 말 것. 중간에 사소한 결정을 묻지 말고 끝까지 진행하고, 최종 답변에는 파일과 아주 짧은 요약만`},
+
+{g:5,t:"학교교육계획 올인원 챗봇",tool:"NotebookLM · 채팅 설정 + 채팅",when:"실습 6. 학교교육계획 PDF를 소스로 올립니다.",p:`[채팅 설정]
+당신은 [덕천]초등학교 교직원을 돕는 학교교육계획 안내 도우미입니다. 반드시 업로드된 학교교육계획 소스에 근거하여 답하고, 관련 쪽수와 담당 부서를 함께 제시하세요. 소스에 없는 내용은 "교육계획에 해당 내용이 없습니다"라고 답하세요.
+
+[질문 예시]
+- 2026학년도 학교 교육목표와 중점 과제를 정리해줘.
+- 학부모 총회에서 안내할 내용을 학년별로 뽑아줘.
+- 우리 학교 안전교육 연간 계획을 월별 표로 정리해줘.`},
+{g:5,t:"학교교육계획으로 총회 보고 슬라이드",tool:"NotebookLM · 스튜디오 › 슬라이드",when:"학부모 총회 PPT. 학교 색과 분위기를 지정합니다.",p:`업로드한 학교교육계획을 바탕으로 [2026]학년도 [덕천]초등학교 학부모 총회 슬라이드 12장을 만들어줘.
+- 1장 표지, 2장 교육목표, 3~9장 중점 과제(건강·인성·학습·안전·소통 등 한 장씩), 10장 학년별 특색 활동, 11장 가정에서 도와주실 일, 12장 마무리 인사
+- 학부모가 보기 편한 따뜻한 [수채화] 일러스트 스타일, 학교 상징 색인 [파란색] 톤으로 통일
+- 글은 한 장에 핵심 3가지 이내, 큰 글씨
+- 소스에 없는 수치·일정은 넣지 말고 [ ]로 비워둬`},
+{g:5,t:"공문에서 담임 체크리스트 뽑기",tool:"NotebookLM · 채팅",when:"현장체험학습·안전 공문. 마감 기한까지 함께.",p:`이 공문에서 담임 교사에게만 해당하는 지시 사항을 추출해줘.
+준비물, 사전 교육, 사후 보고 순서로 나누어 체크리스트 형태로 정리하고, 각 항목에 마감 기한이 있으면 반드시 함께 표시해줘.
+올해 지침에서 작년과 달라진 부분이 있다면 따로 정리해줘.`},
+{g:5,t:"회의 녹음 → 회의록 (NotebookLM)",tool:"NotebookLM · 소스(오디오) + 채팅",when:"녹음 파일(mp3)을 소스로 올린 뒤.",p:`이 회의 녹음을 분석해서 회의 요약, 결정 사항, 액션 아이템(담당자·기한)을 구분해서 회의록 형식으로 정리해줘.
+담당자별 업무 분장 내용만 따로 뽑아줘.
+확실하지 않은 내용은 임의로 만들지 말고 '확인 필요'라고 표시해줘.`},
+{g:5,t:"HWPX 공통 만능 프롬프트",tool:"Gemini (HWPX 첨부)",when:"가정통신문·협의록·회의록 등 기존 HWPX 서식에 새 내용만 바꿔 넣을 때.",p:`첨부한 HWPX 파일은 내가 실제로 사용하는 [문서 종류] 서식이야.
+현재 다른 내용이 들어 있지만 내용은 참고하지 않고 문서의 형식과 구조를 참고해줘.
+
+[반드시 유지] 표 구조, 항목명, 셀 구성, 페이지 배치, 기본적인 문서 형식
+[교체] 현재 들어 있는 내용을 아래 새로운 내용으로 교체해줘.
+
+[새로운 내용]
+(여기에 내용 입력)
+
+[작성 원칙]
+- 제공하지 않은 사실을 임의로 만들지 말 것
+- 부족한 정보는 '확인 필요'로 표시할 것
+- 기존 서식의 각 항목에 맞게 내용을 배치할 것
+- 문체는 실제 학교 공식문서에 적합하게 작성할 것
+
+완성된 HWPX 파일로 제공해줘.`},
+{g:5,t:"회의 녹음 → HWPX 회의록 완성",tool:"Gemini (녹음 + HWPX 첨부)",when:"실습 7. 녹음 분석과 서식 채우기를 한 번에.",p:`이 회의 녹음을 먼저 분석해줘.
+주요 논의사항 / 결정사항 / 미결사항 / 담당자 / 후속조치 / 주요 일정을 정리해줘.
+
+그 다음 첨부한 HWPX 회의록 서식의 표 구조와 항목은 유지하고, 정리한 회의 내용을 넣어서 완성된 회의록 HWPX 파일로 만들어줘.
+확실하지 않은 내용은 '확인 필요'로 표시해줘.`},
+{g:5,t:"HWPX 수업지도안 채우고 부분 수정",tool:"Gemini (HWPX 첨부)",when:"기존 교수학습과정안 서식은 그대로, 내용만 새 수업으로.",p:`이번에 첨부한 HWPX 파일은 내가 실제로 사용하는 교수학습과정안 서식이야. 현재 다른 수업의 내용이 들어 있지만 그 내용은 서식 참고용이야.
+이 파일의 표 구조, 셀 구성, 항목명, 페이지 구성, 문서 배치는 최대한 그대로 유지하고, 기존 수업 내용만 우리가 방금 최종 설계한 '[교통의 변화로 달라진 사람들의 생활 모습]' 수업으로 교체해줘.
+학습목표 / 교수·학습활동 / 핵심 발문 / 예상 학생 반응 / 시간 / 자료 및 유의점이 서로 자연스럽게 연결되도록 작성해줘. 완성된 HWPX 파일로 제공해줘.
+
+[부분 수정] 전체적인 서식과 나머지 내용은 유지해줘. 활동2만 10분 안에 실행 가능한 활동으로 수정하고 HWPX 파일을 다시 만들어줘.`},
+{g:5,t:"가정통신문: 우리 학교 양식·말투 따라 쓰기",tool:"NotebookLM · 채팅 (양식 소스)",when:"기존 통신문을 소스로 올리고 새 안내문을.",p:`올린 가정통신문 양식과 비슷한 형식·말투로 '[2026학년도 겨울방학 영어캠프 안내]' 통신문 내용을 써줘.
+내용은 조금씩 윤문하고 보완하는 수준으로만 수정하고, 전체 틀은 바꾸지 마.
+인사말, 안내 사항(번호), 유의 사항(가·나·다), 끝인사 순서로.
+날짜, 구체 일정은 [ ]로 비워둬.`},
+{g:5,t:"교사 메시지 작성실 (Gemini Project)",tool:"Gemini · Project 지침",when:"학부모·교직원·학생 메시지를 메모 한 줄로. 지침을 프로젝트에 저장해 둡니다.",p:`[프로젝트 지침]
+이 프로젝트는 학교에서 사용하는 메시지를 작성하는 공간이다. 내가 간단한 메모만 입력하면 바로 보낼 수 있는 자연스러운 메시지로 작성해줘.
+주요 대상: 학부모, 교직원, 학생, 관리자
+원칙: 핵심을 먼저 / 짧고 명확하게 / 지나치게 딱딱하지 않게 / 불필요한 인사말 최소화 / 날짜·시간·준비물은 분명하게 / 없는 사실은 만들지 않기 / 대상에 맞게 어조 조절
+
+[테스트 메모]
+내일 3교시 운동장 체육. 물통, 모자 준비. 비 오면 체육관. 학부모 문자.
+
+[톤 조절]
+좀 더 친근하게.`},
+{g:5,t:"사전·사후 수업협의록 초안",tool:"NotebookLM · 채팅 (지도안 + 서식)",when:"공개수업 협의록. 참여 인원을 바꿉니다.",p:`업로드한 지도안과 학교 협의록 서식을 바탕으로 사전 수업협의록 초안을 작성해줘.
+참여자는 수업자 포함 [8]명이야. 서식의 형식에 맞게 개조식으로 작성하고 수업 목표, 활동 구성, 평가 방법에 대한 협의 예정 사항을 항목별로 정리해줘.
+참여 교사 [8]명이 각각 한 가지씩 발언하는 형태로 작성하되, 발언 내용은 수업의 긍정적인 요소와 중점 관찰 사항 위주로 구성해줘.
+
+(수업 후) 앞서 생성한 사전 협의록과 방금 입력한 협의 내용을 바탕으로 사후 수업협의록 초안을 작성해줘. 참여자가 각각 한 가지씩 긍정적인 부분과 발전 방향을 발언하는 형태로 구성해줘.`},
+
+{g:6,t:"소스 근거 되묻기",tool:"NotebookLM · 채팅",when:"공문·수업자료에 쓰기 전 마지막 확인.",p:`이 답변 중 소스에 없는 내용이 있다면 어디인지 표시해줘.
+소스 2 관점에서 이 답변을 반박해봐.`},
+{g:6,t:"학생 자료 결과 보정 3종",tool:"NotebookLM / Gemini",when:"결과가 설명적이거나 딱딱하거나 정답을 너무 알려줄 때.",p:`[너무 설명적일 때] 설명문을 줄이고 장면 중심으로 수정해 주세요. 마지막 질문의 여운이 더 크게 남도록 만들고, 정답을 직접 설명하지 말아 주세요.
+
+[너무 딱딱할 때] 설명은 유지하되 강의처럼 딱딱하지 않게, 초등학교 [3]학년이 친근하게 느낄 짧은 이야기 흐름과 쉬운 표현으로 수정해 주세요.
+
+[정답을 너무 알려줄 때] 동기유발 자료이므로 결론을 줄이고, 학생이 스스로 비교하고 궁금해하도록 마지막 질문의 여운을 더 크게 만들어 주세요.`},
+];
+
+
+const $=s=>document.querySelector(s);
+const views=[...document.querySelectorAll('.view')], tabs=[...document.querySelectorAll('aside button[role=tab]')];
+function show(v){ views.forEach(s=>s.hidden=(s.id!=='view-'+v)); tabs.forEach(b=>b.setAttribute('aria-selected',b.dataset.view===v)); window.scrollTo({top:0}); try{localStorage.setItem('dc-view',v)}catch(e){} }
+tabs.forEach(b=>b.addEventListener('click',()=>show(b.dataset.view)));
+document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>show(b.dataset.go)));
+let init='home'; const h=location.hash.replace('#',''); if(['home','flow','prompts','materials','tips','share'].includes(h)) init=h; else { try{ const s=localStorage.getItem('dc-view'); if(s) init=s }catch(e){} }
+show(init);
+let activeG=-1; const chips=$('#chips');
+const mk=(label,g)=>{const b=document.createElement('button');b.textContent=label;b.setAttribute('aria-pressed',g===activeG);b.addEventListener('click',()=>{activeG=g;render();[...chips.children].forEach((c,i)=>c.setAttribute('aria-pressed',(i===0?-1:i-1)===activeG))});return b};
+chips.append(mk('전체',-1)); GROUPS.forEach((g,i)=>chips.append(mk(g,i)));
+$('#q').addEventListener('input',render);
+function render(){
+  const q=$('#q').value.trim().toLowerCase();
+  const list=P.map((p,i)=>({...p,i})).filter(p=>(activeG<0||p.g===activeG)&&(!q||(p.t+p.when+p.p+p.tool).toLowerCase().includes(q)));
+  $('#count').textContent=`${list.length}개 · 전체 ${P.length}개`;
+  const el=$('#plist'); el.innerHTML='';
+  list.forEach(p=>{
+    const c=document.createElement('article'); c.className='pcard'; const long=p.p.length>420;
+    c.innerHTML=`<header><span class="grp">${GROUPS[p.g]} · ${String(p.i+1).padStart(2,'0')}</span><span class="tool">${p.tool}</span><h4>${p.t}</h4><p class="when">${p.when}</p></header><pre class="prompt ${long?'long':''}"></pre><div class="acts"><button class="primary" data-copy>프롬프트 복사</button>${long?'<button data-more>전체 보기</button>':''}</div>`;
+    c.querySelector('pre').textContent=p.p;
+    c.querySelector('[data-copy]').addEventListener('click',()=>copy(p.p));
+    const m=c.querySelector('[data-more]'); if(m) m.addEventListener('click',()=>{const pre=c.querySelector('pre');pre.classList.toggle('open');m.textContent=pre.classList.contains('open')?'접기':'전체 보기'});
+    el.append(c);
+  });
+}
+render();
+function copy(text){
+  const done=()=>{const t=$('#toast');t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1400);};
+  if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(text).then(done).catch(()=>fallback(text,done)); } else fallback(text,done);
+}
+function fallback(text,done){ const ta=document.createElement('textarea');ta.value=text;document.body.append(ta);ta.select();try{document.execCommand('copy');done()}catch(e){} ta.remove(); }
+if(PADLET_URL){ const c=$('#padlet-url'); c.textContent=PADLET_URL; const a=document.createElement('a');a.href=PADLET_URL;a.target='_blank';a.rel='noopener';a.textContent='열기 ↗';a.style.fontWeight='900';c.after(a); }
+</script>
+
+</body>
+</html>
