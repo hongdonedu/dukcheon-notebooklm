@@ -3,49 +3,49 @@
 "sections_new": [
 [
 "intro",
-"📌 오늘의 연수 — 덕천초 2026. 10. 28. (2시간)",
+"📌 오늘의 연수 — 덕천초 2026. 10. 28.",
 0
 ],
 [
 "s1",
-"STEP 1 | 노트북 만들고 소스 넣기 (10분)",
+"STEP 1 | 노트북 만들고 소스 넣기",
 2000
 ],
 [
 "s2",
-"STEP 2 | 근거 있는 답 받기 — 맞춤설정 · 3단계 질문 · 인용 (15분)",
+"STEP 2 | 근거 있는 답 받기 — 맞춤설정 · 3단계 질문 · 인용",
 3000
 ],
 [
 "s3",
-"STEP 3 | 슬라이드 자료 — 교과서 + 우리 반 캐릭터 (20분)",
+"STEP 3 | 슬라이드 자료 — 교과서 + 우리 반 캐릭터",
 4000
 ],
 [
 "s4",
-"STEP 4 | 오디오 · 동영상 · 인포그래픽 · 마인드맵 (20분)",
+"STEP 4 | 오디오 · 동영상 · 인포그래픽 · 마인드맵",
 5000
 ],
 [
 "s5",
-"STEP 5 | 플래시카드 · 퀴즈 + 과학 도전 (10분)",
+"STEP 5 | 플래시카드 · 퀴즈 + 과학 도전",
 6000
 ],
 [
 "s6",
-"STEP 6 | 업무 노트북 — 공문 · 회의록 · 가정통신문 (25분)",
+"STEP 6 | 업무 노트북 — 공문 · 회의록 · 가정통신문",
 7000
 ],
 [
 "s7",
-"STEP 7 | 확인하고 나누기 · 결과물 나눔 (10분)",
+"STEP 7 | 확인하고 나누기 · 결과물 나눔",
 8000
 ]
 ],
 "rename": [
 [
 400147845,
-"STEP 0 | 준비 — 로그인 · 실습 자료 받기 (5분)",
+"STEP 0 | 준비 — 로그인 · 실습 자료 받기",
 1000
 ],
 [
@@ -153,16 +153,16 @@
 },
 {
 "section": "intro",
-"subject": "🗺️ 오늘의 흐름 · 120분",
-"body": "<p>PART Ⅰ 내 자료로 근거 있는 답 받기 (STEP 0~2, 30분)</p><p>PART Ⅱ 교과서가 살아나는 수업 자료 (STEP 3~5, 50분)</p><p>PART Ⅲ 업무가 가벼워지는 노트북 (STEP 6, 25분)</p><p>PART Ⅳ 확인하고 나누기 (STEP 7, 10분)</p>",
-"attachment": "https://hongdonedu.github.io/dukcheon-notebooklm/art/flow.jpg",
+"subject": "🗺️ 연수 차례",
+"body": "<p>PART Ⅰ 내 자료로 근거 있는 답 받기 — 0. 준비 · 1. 소스 넣기 · 2. 근거 있는 답</p><p>PART Ⅱ 교과서가 살아나는 수업 자료 — 3. 슬라이드 · 4. 오디오·영상·그림 · 5. 플래시카드·퀴즈</p><p>PART Ⅲ 업무가 가벼워지는 노트북 — 6. 업무 노트북</p><p>PART Ⅳ 확인하고 나누기 — 7. 확인·나눔</p>",
+"attachment": "https://hongdonedu.github.io/dukcheon-notebooklm/art/flow2.jpg",
 "comments": [],
 "sort": 90000
 },
 {
 "section": "intro",
 "subject": "💬 이 패들렛 쓰는 법",
-"body": "<p><strong>게시물</strong> = 실습 자료와 실제 화면 캡처 (빨간 번호 = 누를 곳)</p><p><strong>댓글</strong> = 복사해서 쓰는 프롬프트 — 게시물의 댓글을 펼쳐 둘째 줄부터 복사하세요.</p><p>오늘 만든 결과물은 <strong>STEP 7</strong> 칸에 캡처 1장 + 쓴 프롬프트로 나눠 주세요.</p><p>실습 자료의 학교·공문·회의는 모두 연수용 <strong>가상 자료(노티초등학교)</strong>입니다.</p>",
+"body": "<p><strong>게시물</strong> = 실습 자료와 실제 화면 캡처 (빨간 번호 = 누를 곳)</p><p><strong>댓글</strong> = 복사해서 쓰는 프롬프트 — 게시물의 댓글을 펼쳐 둘째 줄부터 복사하세요.</p><p>오늘 만든 결과물은 <strong>STEP 7</strong> 칸에 캡처 1장 + 쓴 프롬프트로 나눠 주세요.</p><p>교육계획·가정통신문은 <strong>명진초 실제 문서</strong>, 공문·협의회 녹취록은 <strong>연수용 가상 자료</strong>입니다.</p>",
 "attachment": "",
 "comments": [],
 "sort": 80000
@@ -170,7 +170,7 @@
 {
 "section": 400147845,
 "subject": "📦 실습 자료 한꺼번에 받기 (ZIP)",
-"body": "<p>교과서 PDF 2개(사회 3-2 교통의 변화 · 과학 5-1 지층과 화석), 캐릭터 3×3 그림, 업무 자료 4개(교육계획 · 공문 · 협의회 녹취록 · 가정통신문 예시), 프롬프트 카드 PDF가 들어 있어요.</p><p>받아서 압축을 풀고, 단계마다 필요한 파일을 노트북LM에 소스로 넣으면 됩니다.</p><p>🔗 아카이브에서 크게 보기: https://hongdonedu.github.io/dukcheon-notebooklm/#s0</p>",
+"body": "<p>교과서 PDF 2개(사회 3-2 교통의 변화 · 과학 5-1 지층과 화석), 캐릭터 3×3 그림, 업무 자료(명진초 교육계획 · 가정통신문 2종 · 공문 · 협의회 녹취록), 프롬프트 카드 PDF가 들어 있어요.</p><p>받아서 압축을 풀고, 단계마다 필요한 파일을 노트북LM에 소스로 넣으면 됩니다.</p><p>🔗 아카이브에서 크게 보기: https://hongdonedu.github.io/dukcheon-notebooklm/#s0</p>",
 "attachment": "https://hongdonedu.github.io/dukcheon-notebooklm/files/덕천초_노트북LM_실습자료.zip",
 "comments": [],
 "sort": 90000
@@ -178,7 +178,7 @@
 {
 "section": 400147845,
 "subject": "🧾 프롬프트 카드 PDF (22개)",
-"body": "<p>오늘 쓰는 프롬프트 22개를 단계 순서대로 모은 A4 5쪽 자료입니다. 붙여 넣을 곳과 설정값, 책 쪽수가 함께 있어요.</p>",
+"body": "<p>오늘 쓰는 프롬프트 22개를 단계 순서대로 모은 A4 5쪽 자료입니다. 붙여 넣을 곳과 설정값이 함께 있어요.</p>",
 "attachment": "https://hongdonedu.github.io/dukcheon-notebooklm/files/덕천초_노트북LM_프롬프트카드.pdf",
 "comments": [],
 "sort": 80000
@@ -194,7 +194,7 @@
 {
 "section": "s1",
 "subject": "실습 자료 ② 우리 반 캐릭터 3×3 (도윤 · 하린 · 노티)",
-"body": "<p>교과서와 <strong>함께</strong> 소스로 넣어 두면 STEP 3 슬라이드에 캐릭터가 등장해요.</p><p>옛날 아이 도윤, 오늘날 아이 하린, 보라 로봇 노티 — 우리 반 캐릭터로 바꿔 써도 됩니다. (책 250쪽)</p>",
+"body": "<p>교과서와 <strong>함께</strong> 소스로 넣어 두면 STEP 3 슬라이드에 캐릭터가 등장해요.</p><p>옛날 아이 도윤, 오늘날 아이 하린, 보라 로봇 노티 — 우리 반 캐릭터로 바꿔 써도 됩니다.</p>",
 "attachment": "https://hongdonedu.github.io/dukcheon-notebooklm/files/캐릭터_3x3_도윤_하린_노티.png",
 "comments": [],
 "sort": 90000
@@ -202,7 +202,7 @@
 {
 "section": "s1",
 "subject": "따라 하기 ① ‘+ 새 노트북’ → ‘파일 업로드’",
-"body": "<p>① 파일 업로드를 눌러 교과서 PDF + 캐릭터 그림을 함께 고르기</p><p>② 또는 파일을 아래 칸으로 끌어다 놓기</p><p>PDF·이미지·한글(.hwp/.hwpx)·워드·오디오·웹사이트·유튜브 링크·복사한 텍스트 모두 소스가 됩니다.</p><p>🔗 아카이브에서 크게 보기: https://hongdonedu.github.io/dukcheon-notebooklm/#s1</p>",
+"body": "<p>① 파일 업로드를 눌러 교과서 PDF + 캐릭터 그림을 함께 고르기</p><p>② 또는 파일을 아래 칸으로 끌어다 놓기</p><p>PDF·이미지·한글(.hwpx)·워드·오디오·웹사이트·유튜브 링크·복사한 텍스트 모두 소스가 됩니다.</p><p>🔗 아카이브에서 크게 보기: https://hongdonedu.github.io/dukcheon-notebooklm/#s1</p>",
 "attachment": "https://hongdonedu.github.io/dukcheon-notebooklm/cap/k01_upload_dialog.jpg",
 "comments": [],
 "sort": 80000
@@ -220,7 +220,7 @@
 {
 "section": "s2",
 "subject": "① ⋮ → 채팅 설정 → ‘맞춤’에 지침 넣기",
-"body": "<p>오른쪽 위 ⋮(옵션 더보기) → 채팅 설정 → <strong>맞춤</strong> → 지침 붙여 넣고 저장 (최대 10,000자)</p><p>역할 · 근거 범위 · 학생 수준을 정해 두면 이 노트북의 모든 대화에 적용돼요. (책 32쪽)</p><p>💬 지침은 댓글에 있어요.</p><p>🔗 아카이브에서 크게 보기: https://hongdonedu.github.io/dukcheon-notebooklm/#s2</p>",
+"body": "<p>오른쪽 위 ⋮(옵션 더보기) → 채팅 설정 → <strong>맞춤</strong> → 지침 붙여 넣고 저장 (최대 10,000자)</p><p>역할 · 근거 범위 · 학생 수준을 정해 두면 이 노트북의 모든 대화에 적용돼요.</p><p>💬 지침은 댓글에 있어요.</p><p>🔗 아카이브에서 크게 보기: https://hongdonedu.github.io/dukcheon-notebooklm/#s2</p>",
 "attachment": "https://hongdonedu.github.io/dukcheon-notebooklm/cap/k05_chat_settings_custom.jpg",
 "comments": [
 "<p><strong>💬 P2 · 맞춤 지침 — 3학년 사회 수업 설계 도우미</strong><br>붙여 넣을 곳: 채팅 설정 → ⋮ → 채팅 설정 → 맞춤</p><p>당신은 초등학교 3학년 사회 수업을 준비하는 담임 교사를 돕는 수업 설계 도우미입니다. 모든 답변은 업로드된 소스(사회 교과서 PDF)에 근거하여 작성하세요. 소스에 없는 내용을 사용할 경우 반드시 '(소스 외 추론)'이라고 표시하세요. 학생 수준은 초등학교 3학년이며, 답변은 항상 한국어로, 쉽고 친근한 표현으로 작성하세요.</p>"
@@ -230,7 +230,7 @@
 {
 "section": "s2",
 "subject": "② 3단계 질문 공식 — 과업 · 맥락 · 산출물",
-"body": "<p><strong>과업</strong> 무엇을 해 줘야 하는지 동사로 · <strong>맥락</strong> 학년·교과·소스 범위 · <strong>산출물</strong> 형식·분량·대상 (책 33쪽)</p><p>결과: 기준별 비교 표 + 발문 2개, 그리고 ‘(소스 외 추론)’ 표시 — 지침이 작동한다는 증거예요.</p><p>💬 질문 프롬프트는 댓글에 있어요.</p><p>🔗 아카이브에서 크게 보기: https://hongdonedu.github.io/dukcheon-notebooklm/#s2</p>",
+"body": "<p><strong>과업</strong> 무엇을 해 줘야 하는지 동사로 · <strong>맥락</strong> 학년·교과·소스 범위 · <strong>산출물</strong> 형식·분량·대상</p><p>결과: 기준별 비교 표 + 발문 2개, 그리고 ‘(소스 외 추론)’ 표시 — 지침이 작동한다는 증거예요.</p><p>💬 질문 프롬프트는 댓글에 있어요.</p><p>🔗 아카이브에서 크게 보기: https://hongdonedu.github.io/dukcheon-notebooklm/#s2</p>",
 "attachment": "https://hongdonedu.github.io/dukcheon-notebooklm/cap/k06_chat_answer_citation.jpg",
 "comments": [
 "<p><strong>💬 P3 · 3단계 공식 질문 — 옛날과 오늘날 교통수단 비교 표</strong><br>붙여 넣을 곳: 채팅 → 채팅 입력 칸</p><p>소스의 '옛날 사람들이 교통수단을 이용했던 모습'과 '오늘날의 교통수단'을 비교해서, 연결하는 물건·움직이는 힘·걸리는 시간 세 가지 기준으로 초등 3학년이 이해하기 쉬운 표로 정리해줘. 표 아래에 수업에서 던질 발문 2개도 넣어줘.</p>"
@@ -240,7 +240,7 @@
 {
 "section": "s2",
 "subject": "③ 인용 번호로 원문 확인 — 3초 팩트 체크",
-"body": "<p>답 속 숫자에 마우스를 올리면 교과서 원문 쪽이 바로 보여요. 누르면 출처 칸에서 열립니다.</p><p>확인 3단계: ① 숫자 전부 눌러 대조 ② 추론 범위 묻기 ③ 다른 소스 관점으로 반박해 보기 (책 35쪽)</p><p>💬 확인 질문은 댓글에 있어요.</p><p>🔗 아카이브에서 크게 보기: https://hongdonedu.github.io/dukcheon-notebooklm/#s2</p>",
+"body": "<p>답 속 숫자에 마우스를 올리면 교과서 원문 쪽이 바로 보여요. 누르면 출처 칸에서 열립니다.</p><p>확인 3단계: ① 숫자 전부 눌러 대조 ② 추론 범위 묻기 ③ 다른 소스 관점으로 반박해 보기</p><p>💬 확인 질문은 댓글에 있어요.</p><p>🔗 아카이브에서 크게 보기: https://hongdonedu.github.io/dukcheon-notebooklm/#s2</p>",
 "attachment": "https://hongdonedu.github.io/dukcheon-notebooklm/cap/k07_citation_hover.jpg",
 "comments": [
 "<p><strong>💬 P4 · 확인 질문 — 추론으로 채운 부분 찾기</strong><br>붙여 넣을 곳: 채팅 → 답을 받은 바로 다음에</p><p>방금 답변 중 소스에 직접 나오지 않고 추론으로 채운 부분이 있다면 어디인지 표시해줘.</p>"
@@ -250,7 +250,7 @@
 {
 "section": "s3",
 "subject": "① 슬라이드 자료 맞춤설정 — 세 덩어리 프롬프트",
-"body": "<p>스튜디오 → 슬라이드 자료 → <strong>발표자 슬라이드</strong> · 길이 기본값</p><p>설명 칸: [역할 및 대상] · [내용 및 시각 기준] · [디자인 통일성]</p><p><strong>슬라이드 개요 검토</strong>를 켜고 지금 생성 → 5~10분 걸리니 STEP 4를 동시에 걸어 두세요.</p><p>💬 설명 프롬프트는 댓글에 있어요.</p><p>🔗 아카이브에서 크게 보기: https://hongdonedu.github.io/dukcheon-notebooklm/#s3</p>",
+"body": "<p>스튜디오 → 슬라이드 자료 → <strong>발표자 슬라이드</strong> · 길이 기본값</p><p>설명 칸: [역할 및 대상] · [내용 및 시각 기준] · [디자인 통일성]</p><p><strong>슬라이드 개요 검토</strong>를 켜고 지금 생성 → 시간이 걸리니 STEP 4를 동시에 걸어 두세요.</p><p>💬 설명 프롬프트는 댓글에 있어요.</p><p>🔗 아카이브에서 크게 보기: https://hongdonedu.github.io/dukcheon-notebooklm/#s3</p>",
 "attachment": "https://hongdonedu.github.io/dukcheon-notebooklm/cap/k08_slides_customize.jpg",
 "comments": [
 "<p><strong>💬 P5 · 슬라이드 설명 — 세 덩어리 프롬프트</strong><br>붙여 넣을 곳: 스튜디오 · 슬라이드 자료 → 만들려는 슬라이드 자료에 대한 설명<br>설정: 발표자 슬라이드 · 길이 기본값 · 슬라이드 개요 검토 켜기</p><p>[역할 및 대상] 초등학교 3학년 사회 수업용 발표자 슬라이드 8장을 만들어줘. 주제는 '교통의 변화로 달라진 생활 모습'.</p><p>[내용 및 시각 기준] 업로드한 교과서를 내용 기준으로 삼고, 소스의 캐릭터 세트(옛날 아이 도윤, 오늘날 아이 하린, 보라 로봇 노티)가 슬라이드 곳곳에 내용에 어울리게 등장하게 해줘.</p><p>[디자인 통일성] 깔끔하고 세련된 일러스트 스타일. 제목과 주요 글자는 크고 선명하게. 복잡한 문장보다 핵심 개념과 이미지 중심으로. 마지막 장은 '교통의 변화로 우리 생활은 어떻게 달라졌을까요?' 질문으로 끝내줘.</p>"
@@ -270,7 +270,7 @@
 {
 "section": "s3",
 "subject": "③ 완성 — 도윤 · 하린 · 노티가 등장하는 8장",
-"body": "<p>연필 = 한 장씩 수정 요청 · ⋮ = PDF / PowerPoint(.pptx) 다운로드</p><p>PowerPoint로 받으면 장마다 그림 한 장이에요. 글자를 고치려면 ‘도구 모음’의 노트북LM 리무버나 캔바를 쓰세요. (책 97쪽)</p><p>💬 한 장 고치기 프롬프트는 댓글에.</p><p>🔗 아카이브에서 크게 보기: https://hongdonedu.github.io/dukcheon-notebooklm/#s3</p>",
+"body": "<p>연필 = 한 장씩 수정 요청 · ⋮ = PDF / PowerPoint(.pptx) 다운로드</p><p>PowerPoint로 받으면 장마다 그림 한 장이에요. 글자를 고치려면 ‘도구 모음’의 노트북LM 리무버나 캔바를 쓰세요.</p><p>💬 한 장 고치기 프롬프트는 댓글에.</p><p>🔗 아카이브에서 크게 보기: https://hongdonedu.github.io/dukcheon-notebooklm/#s3</p>",
 "attachment": "https://hongdonedu.github.io/dukcheon-notebooklm/nlm/slides_m.jpg",
 "comments": [
 "<p><strong>💬 P7 · 한 장 고치기 — 수정 요청</strong><br>붙여 넣을 곳: 스튜디오 · 슬라이드 수정(연필) → 완성된 슬라이드에서 연필 → 고칠 장 선택</p><p>이 슬라이드 제목을 '교통이 발달하면서 생긴 문제'로 바꾸고, 본문에 교통 혼잡과 환경 오염 예시를 한 줄씩 넣어줘. 하린이가 걱정하는 표정으로 등장하게 해줘.</p>"
@@ -358,51 +358,67 @@
 },
 {
 "section": "s6",
-"subject": "업무 자료 ① 노티초 2026 교육계획 (가상)",
-"body": "<p>학교 비전, 중점 과제, 월별 학사 일정이 담긴 가상 학교 교육계획 4쪽</p><p>새 노트북에 네 파일을 모두 소스로 넣으세요.</p>",
-"attachment": "https://hongdonedu.github.io/dukcheon-notebooklm/files/노티초_2026_교육계획.pdf",
+"subject": "업무 자료 ① 명진초 2025 교육계획 (PDF)",
+"body": "<p>학교 경영 체계 · 학사 일정 · 월별 행사가 담긴 명진초 교육계획 (한글 원본을 소스용 PDF로 저장)</p>",
+"attachment": "https://hongdonedu.github.io/dukcheon-notebooklm/files/명진초_2025_교육계획.pdf",
 "comments": [],
 "sort": 100000
 },
 {
 "section": "s6",
-"subject": "업무 자료 ② 현장체험학습 운영 안내 공문 (가상)",
-"body": "<p>2025→2026 달라진 점, 담임·업무 담당 기한이 들어 있는 가상 교육지원청 공문</p><p>새 노트북에 네 파일을 모두 소스로 넣으세요.</p>",
-"attachment": "https://hongdonedu.github.io/dukcheon-notebooklm/files/현장체험학습_운영안내_공문.pdf",
+"subject": "업무 자료 ② 가정통신문 양식 — 명진 도담도담 통신 (.hwpx)",
+"body": "<p>머리글 · 인사말 · ▣ 안내 · 끝인사 틀을 그대로 따라 쓰게 하는 양식 (hwpx는 바로 소스로 들어가요)</p>",
+"attachment": "https://hongdonedu.github.io/dukcheon-notebooklm/files/명진초_가정통신문_마인크래프트_코딩페스티벌.hwpx",
 "comments": [],
 "sort": 99000
 },
 {
 "section": "s6",
-"subject": "업무 자료 ③ 4학년 협의회 녹취록 (가상)",
-"body": "<p>현장체험학습 장소·버스·답사·점심을 의논한 협의회 대화 녹취 (txt 파일도 있음)</p><p>새 노트북에 네 파일을 모두 소스로 넣으세요.</p>",
-"attachment": "https://hongdonedu.github.io/dukcheon-notebooklm/files/4학년_협의회_녹취록.pdf",
+"subject": "업무 자료 ③ 가정통신문 예시 — 영재교육 대상자 선발 안내",
+"body": "<p>같은 도담도담 통신 양식의 다른 예시</p>",
+"attachment": "https://hongdonedu.github.io/dukcheon-notebooklm/files/명진초_가정통신문_영재교육대상자_선발안내.pdf",
 "comments": [],
 "sort": 98000
 },
 {
 "section": "s6",
-"subject": "업무 자료 ④ 가정통신문 예시 — 여름방학 (가상)",
-"body": "<p>인사말·번호 안내·가나다 유의 사항·끝인사 틀을 그대로 따라 쓰게 하는 양식</p><p>새 노트북에 네 파일을 모두 소스로 넣으세요.</p>",
-"attachment": "https://hongdonedu.github.io/dukcheon-notebooklm/files/가정통신문_예시_여름방학.pdf",
+"subject": "업무 자료 ④ 현장체험학습 운영 안내 공문 (연수용 가상)",
+"body": "<p>2025→2026 달라진 점, 담임·업무 담당 기한이 들어 있는 가상 교육지원청 공문</p>",
+"attachment": "https://hongdonedu.github.io/dukcheon-notebooklm/files/현장체험학습_운영안내_공문.pdf",
 "comments": [],
 "sort": 97000
 },
 {
 "section": "s6",
+"subject": "업무 자료 ⑤ 4학년 협의회 녹취록 (연수용 가상)",
+"body": "<p>현장체험학습 장소·버스·답사·점심을 의논한 협의회 대화 녹취 (txt 파일도 있음)</p>",
+"attachment": "https://hongdonedu.github.io/dukcheon-notebooklm/files/4학년_협의회_녹취록.pdf",
+"comments": [],
+"sort": 96000
+},
+{
+"section": "s6",
+"subject": "⚠️ 한글 파일은 .hwpx · PDF로 넣기",
+"body": "<p>예전 한글 파일(<strong>.hwp</strong>)을 넣으면 ‘오류가 발생했습니다’가 떠요.</p><p>한글에서 <strong>다른 이름으로 저장 → .hwpx 또는 PDF</strong>로 바꿔서 넣으면 잘 들어갑니다.</p><p>원본 확인용: https://hongdonedu.github.io/dukcheon-notebooklm/files/명진초_2025_교육계획.hwp</p><p>🔗 아카이브에서 크게 보기: https://hongdonedu.github.io/dukcheon-notebooklm/#s6</p>",
+"attachment": "https://hongdonedu.github.io/dukcheon-notebooklm/cap/w10_hwp_error.jpg",
+"comments": [],
+"sort": 94000
+},
+{
+"section": "s6",
 "subject": "① 업무 도우미 지침 — 원문 그대로 · 없으면 없다고",
 "body": "<p>⋮ → 채팅 설정 → 맞춤. 업무 노트북은 정확성이 생명이라 ‘날짜·수치·담당자는 원문 그대로, 확실하지 않으면 확인 필요’를 꼭 넣어요.</p><p>💬 지침은 댓글에.</p><p>🔗 아카이브에서 크게 보기: https://hongdonedu.github.io/dukcheon-notebooklm/#s6</p>",
-"attachment": "https://hongdonedu.github.io/dukcheon-notebooklm/cap/w02_chat_settings_work.jpg",
+"attachment": "https://hongdonedu.github.io/dukcheon-notebooklm/cap/m02_chat_settings_work.jpg",
 "comments": [
-"<p><strong>💬 P16 · 맞춤 지침 — 학교 업무 도우미</strong><br>붙여 넣을 곳: 채팅 설정 → ⋮ → 채팅 설정 → 맞춤</p><p>당신은 노티초등학교 교직원을 돕는 업무 도우미입니다. 반드시 업로드된 소스(교육계획·공문·협의회 녹취록·가정통신문)에 근거하여 답하고, 관련 문서 이름을 함께 밝히세요. 소스에 없는 내용은 '소스에 해당 내용이 없습니다'라고 답하세요. 날짜·수치·담당자는 원문 그대로 쓰고, 확실하지 않은 내용은 '확인 필요'로 표시하세요. 답변은 개조식으로 간결하게 작성하세요.</p>"
+"<p><strong>💬 P16 · 맞춤 지침 — 학교 업무 도우미</strong><br>붙여 넣을 곳: 채팅 설정 → ⋮ → 채팅 설정 → 맞춤</p><p>당신은 명진초등학교 교직원을 돕는 업무 도우미입니다. 반드시 업로드된 소스(교육계획·공문·협의회 녹취록·가정통신문)에 근거하여 답하고, 관련 문서 이름을 함께 밝히세요. 소스에 없는 내용은 '소스에 해당 내용이 없습니다'라고 답하세요. 날짜·수치·담당자는 원문 그대로 쓰고, 확실하지 않은 내용은 '확인 필요'로 표시하세요. 답변은 개조식으로 간결하게 작성하세요.</p>"
 ],
 "sort": 90000
 },
 {
 "section": "s6",
 "subject": "② 공문 → 담임용 체크리스트 (실제 날짜로)",
-"body": "<p>‘실시 10일 전’ 같은 기준을 11월 10일처럼 실제 날짜로 바꾸고, 협의회 녹취록 내용과 맞춰 보며 정리해 줘요. 작년과 달라진 점도 따로!</p><p>💬 프롬프트는 댓글에.</p><p>🔗 아카이브에서 크게 보기: https://hongdonedu.github.io/dukcheon-notebooklm/#s6</p>",
-"attachment": "https://hongdonedu.github.io/dukcheon-notebooklm/cap/w03_checklist.jpg",
+"body": "<p>‘실시 10일 전’ 같은 기준을 11월 10일(화)처럼 실제 날짜로 바꾸고, 작년과 달라진 점도 따로 정리해 줘요.</p><p>💬 프롬프트는 댓글에.</p><p>🔗 아카이브에서 크게 보기: https://hongdonedu.github.io/dukcheon-notebooklm/#s6</p>",
+"attachment": "https://hongdonedu.github.io/dukcheon-notebooklm/cap/m03_checklist.jpg",
 "comments": [
 "<p><strong>💬 P17 · 공문 → 담임용 체크리스트</strong><br>붙여 넣을 곳: 채팅 → 채팅 입력 칸</p><p>현장체험학습 공문에서 담임교사에게만 해당하는 지시 사항을 마감 기한과 함께 체크리스트(□)로 정리해줘. 4학년 현장체험학습이 11월 20일이니까 기한을 실제 날짜로 바꿔 주고, 작년과 달라진 점도 따로 알려줘.</p>"
 ],
@@ -412,7 +428,7 @@
 "section": "s6",
 "subject": "③ 녹취록 → 회의록",
 "body": "<p>회의 개요 · 결정 사항 · 미결 사항 · 담당자별 할 일(기한) 표. 회의 녹음 파일(mp3 등)도 바로 소스가 됩니다.</p><p>💬 프롬프트는 댓글에.</p><p>🔗 아카이브에서 크게 보기: https://hongdonedu.github.io/dukcheon-notebooklm/#s6</p>",
-"attachment": "https://hongdonedu.github.io/dukcheon-notebooklm/cap/w04_minutes.jpg",
+"attachment": "https://hongdonedu.github.io/dukcheon-notebooklm/cap/m04_minutes.jpg",
 "comments": [
 "<p><strong>💬 P18 · 녹취록 → 회의록</strong><br>붙여 넣을 곳: 채팅 → 채팅 입력 칸</p><p>4학년 협의회 녹취록을 회의록 형식으로 정리해줘. 항목은 ① 회의 개요 ② 결정 사항 ③ 미결 사항 ④ 담당자별 할 일(기한 포함) 표로 나눠 주고, 확실하지 않은 내용은 '확인 필요'로 표시해줘.</p>"
 ],
@@ -420,27 +436,36 @@
 },
 {
 "section": "s6",
-"subject": "④ 양식 그대로 가정통신문 + 교육계획 일정 뽑기",
-"body": "<p>예시 통신문의 틀(인사말 · 번호 안내 · 가나다 유의 사항 · 끝인사)과 말투를 그대로, 소스에 없는 날짜는 [ ]로 비워 줘요. (책 183쪽)</p><p>💬 프롬프트 2개는 댓글에.</p><p>🔗 아카이브에서 크게 보기: https://hongdonedu.github.io/dukcheon-notebooklm/#s6</p>",
-"attachment": "https://hongdonedu.github.io/dukcheon-notebooklm/cap/w05_newsletter.jpg",
+"subject": "④ 양식 그대로 가정통신문 — 도담도담 통신",
+"body": "<p>머리글(명진 도담도담 통신 · 발행 · 담당) · 인사말 · ▣ 안내 · 끝인사 틀을 그대로, 방학 기간은 교육계획 학사 일정에서 찾아 넣고 없는 내용은 [ ]로 비워 줘요.</p><p>💬 프롬프트는 댓글에.</p><p>🔗 아카이브에서 크게 보기: https://hongdonedu.github.io/dukcheon-notebooklm/#s6</p>",
+"attachment": "https://hongdonedu.github.io/dukcheon-notebooklm/cap/m05_newsletter.jpg",
 "comments": [
-"<p><strong>💬 P19 · 양식 그대로 가정통신문</strong><br>붙여 넣을 곳: 채팅 → 채팅 입력 칸</p><p>가정통신문 예시(여름방학)와 비슷한 형식·말투로 '2026학년도 겨울방학 생활 안내' 통신문을 써줘. 전체 틀(인사말, 번호 안내, 가·나·다 유의 사항, 끝인사)은 바꾸지 말고, 방학 날짜처럼 소스에 없는 일정은 [ ]로 비워줘.</p>",
-"<p><strong>💬 P20 · 더 해 보기 — 교육계획에서 일정 뽑기</strong><br>붙여 넣을 곳: 채팅 → 채팅 입력 칸</p><p>교육계획에서 11월~12월 학교 행사만 날짜순 표로 뽑아줘. 4학년과 관련된 행사는 굵게 표시해줘.</p>"
+"<p><strong>💬 P19 · 양식 그대로 가정통신문</strong><br>붙여 넣을 곳: 채팅 → 채팅 입력 칸</p><p>명진 도담도담 통신(마인크래프트 코딩 페스티벌 안내)과 같은 형식·말투로 '2025학년도 겨울방학 생활 안내' 가정통신문을 써줘. 머리글(명진 도담도담 통신·발행·담당), 인사말, ▣ 안내 항목, 끝인사, 날짜와 학교장 순서는 그대로 두고, 방학 기간과 개학일은 교육계획의 학사 일정에서 찾아 넣어줘. 소스에 없는 내용은 [ ]로 비워줘.</p>"
 ],
 "sort": 87000
 },
 {
 "section": "s6",
-"subject": "⑤ 동학년 선생님과 공유하기",
-"body": "<p>공유 → 노트북 액세스 ‘링크가 있는 모든 사용자’(또는 사람 추가) → 사본 생성 허용 여부 확인 → 링크 복사</p><p>학생 이름·연락처·상담 기록 같은 민감 정보가 든 노트북은 공유하지 않아요. (책 265쪽)</p><p>🔗 아카이브에서 크게 보기: https://hongdonedu.github.io/dukcheon-notebooklm/#s6</p>",
-"attachment": "https://hongdonedu.github.io/dukcheon-notebooklm/cap/w08_share_link.jpg",
-"comments": [],
+"subject": "⑤ 교육계획 → 2학기 학사 일정 표",
+"body": "<p>개학식 · 재량휴업일 · 졸업식·종업식 · 겨울방학이 날짜순 표로. 숫자를 눌러 교육계획 원문과 맞춰 보세요.</p><p>💬 프롬프트는 댓글에.</p><p>🔗 아카이브에서 크게 보기: https://hongdonedu.github.io/dukcheon-notebooklm/#s6</p>",
+"attachment": "https://hongdonedu.github.io/dukcheon-notebooklm/cap/m06_schedule.jpg",
+"comments": [
+"<p><strong>💬 P20 · 교육계획 → 학사 일정 표</strong><br>붙여 넣을 곳: 채팅 → 채팅 입력 칸</p><p>교육계획에서 2학기 주요 학사 일정(개학식, 재량휴업일, 졸업식·종업식, 겨울방학)을 날짜순 표로 뽑아줘.</p>"
+],
 "sort": 86000
+},
+{
+"section": "s6",
+"subject": "⑥ 동학년 선생님과 공유하기",
+"body": "<p>공유 → 사용자 추가(이메일) 또는 노트북 액세스 ‘링크가 있는 모든 사용자’ → 링크 복사</p><p>학생 이름·연락처·상담 기록 같은 민감 정보가 든 노트북은 공유하지 않아요.</p><p>🔗 아카이브에서 크게 보기: https://hongdonedu.github.io/dukcheon-notebooklm/#s6</p>",
+"attachment": "https://hongdonedu.github.io/dukcheon-notebooklm/cap/m07_share.jpg",
+"comments": [],
+"sort": 85000
 },
 {
 "section": "s7",
 "subject": "🛡️ 쓰기 전에 확인할 네 가지",
-"body": "<p>1. <strong>근거 확인</strong> — 인용 번호를 눌러 원문과 대조했나요? 숫자·날짜·이름은 특히 꼼꼼히.</p><p>2. <strong>개인정보</strong> — 학생 이름·연락처·사진·상담 원본은 올리지 않기. 관찰 기록은 비식별화 후에.</p><p>3. <strong>저작권 · 표기</strong> — 권한 있는 자료만 소스로. 학교 밖에 공개할 땐 ‘AI 활용’과 바탕 출처를 표기.</p><p>4. <strong>공유 범위</strong> — 노트북 공유는 필요한 사람·우리 학교 범위로. 생기부 문장은 그대로 붙이지 않기.</p><p>AI가 만든 것은 ‘작품’이 아니라 ‘재료’입니다. (책 263~268쪽)</p><p>💬 AI 활용 표기 · 우리 반 AI 약속 프롬프트는 댓글에.</p><p>🔗 아카이브에서 크게 보기: https://hongdonedu.github.io/dukcheon-notebooklm/#s7</p>",
+"body": "<p>1. <strong>근거 확인</strong> — 인용 번호를 눌러 원문과 대조했나요? 숫자·날짜·이름은 특히 꼼꼼히.</p><p>2. <strong>개인정보</strong> — 학생 이름·연락처·사진·상담 원본은 올리지 않기. 관찰 기록은 비식별화 후에.</p><p>3. <strong>저작권 · 표기</strong> — 권한 있는 자료만 소스로. 학교 밖에 공개할 땐 ‘AI 활용’과 바탕 출처를 표기.</p><p>4. <strong>공유 범위</strong> — 노트북 공유는 필요한 사람·우리 학교 범위로. 생기부 문장은 그대로 붙이지 않기.</p><p>AI가 만든 것은 ‘작품’이 아니라 ‘재료’입니다.</p><p>💬 AI 활용 표기 · 우리 반 AI 약속 프롬프트는 댓글에.</p><p>🔗 아카이브에서 크게 보기: https://hongdonedu.github.io/dukcheon-notebooklm/#s7</p>",
 "attachment": "https://hongdonedu.github.io/dukcheon-notebooklm/art/ch4.webp",
 "comments": [
 "<p><strong>💬 P21 · AI 활용 표기 문구 만들기</strong><br>붙여 넣을 곳: 채팅 → 결과물을 만든 노트북에서</p><p>이 노트북으로 만든 수업 자료 하단에 넣을 'AI 활용 표기' 문구를 한 줄로 써줘. 활용 도구, 바탕 자료(소스 이름), 교사 검토 여부가 들어가게 해줘.</p>",
