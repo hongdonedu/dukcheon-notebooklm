@@ -324,8 +324,7 @@ function viewHome(){
    <div class="panel"><span class="where">가운데</span><b>채팅</b><p>질문하고 답을 받는 곳. 숫자를 누르면 원문이 열립니다.</p></div>
    <div class="panel"><span class="where">오른쪽</span><b>스튜디오</b><p>슬라이드·오디오·영상·인포그래픽·퀴즈를 클릭 한 번으로.</p></div></div>
    ${capCard({img:'cap/k02_sources_added.jpg',w:1568,h:751,title:'실제 화면 — 출처 · 채팅 · 스튜디오',marks:[[10,56,388,690,1,'red'],[410,56,736,690,2,'red'],[1154,56,388,690,3,'red']],steps:['출처: 교과서 PDF + 캐릭터 그림','채팅: 자동 요약과 추천 질문','스튜디오: 결과물 타일']})}
-  </section>
-  <section class="sec"><div class="bookbox"><img src="img/part2.png" alt=""><div><h3>함께 보면 좋은 책</h3><p>『${esc(C.meta.book)}』</p></div></div></section>`;
+  </section>`;
 }
 function viewStep(s){
   const p=partById[s.part];const i=C.steps.indexOf(s);const prev=C.steps[i-1],next=C.steps[i+1];
